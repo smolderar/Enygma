@@ -1,0 +1,76 @@
+Merkle Tree depth: 8.
+/workspaces/Enygma/enygma_dvp/build/Payment.json
+/workspaces/Enygma/enygma_dvp/build/OwnershipErc721.json
+/workspaces/Enygma/enygma_dvp/build/OwnershipErc1155NonFungible.json
+/workspaces/Enygma/enygma_dvp/build/OwnershipErc1155Fungible.json
+/workspaces/Enygma/enygma_dvp/build/JoinSplitErc1155.json
+/workspaces/Enygma/enygma_dvp/build/BatchErc1155.json
+/workspaces/Enygma/enygma_dvp/build/JoinSplitErc20_10_2.json
+/workspaces/Enygma/enygma_dvp/build/AuctionInit.json
+/workspaces/Enygma/enygma_dvp/build/AuctionBid.json
+/workspaces/Enygma/enygma_dvp/build/AuctionNotWinningBid.json
+/workspaces/Enygma/enygma_dvp/build/AuctionPrivateOpening.json
+/workspaces/Enygma/enygma_dvp/build/BrokerRegistration.json
+/workspaces/Enygma/enygma_dvp/build/LegitBroker.json
+/workspaces/Enygma/enygma_dvp/build/JoinSplitErc20WithBrokerV1.json
+/workspaces/Enygma/enygma_dvp/build/JoinSplitErc1155WithBrokerV1.json
+/workspaces/Enygma/enygma_dvp/build/JoinSplitErc1155WithAuditor.json
+/workspaces/Enygma/enygma_dvp/build/OwnershipErc1155NonFungibleWithAuditor.json
+/workspaces/Enygma/enygma_dvp/build/BatchErc1155NonFungibleWithAuditor.json
+/workspaces/Enygma/enygma_dvp/build/OwnershipErc721WithAuditor.json
+/workspaces/Enygma/enygma_dvp/build/JoinSplitErc20WithAuditor.json
+/workspaces/Enygma/enygma_dvp/build/JoinSplitErc20_10_2_WithAuditor.json
+/workspaces/Enygma/enygma_dvp/build/AuctionInit_Auditor.json
+/workspaces/Enygma/enygma_dvp/build/AuctionBid_Auditor.json
+/workspaces/Enygma/enygma_dvp/build/DvPInitiator.json
+/workspaces/Enygma/enygma_dvp/build/DvPDestination.json
+Loaded 25 verification keys
+Verifier Address: 0xadF42E56D77AbbbE9f77A1aA95cf3827A7B78808
+Initializing Verifier with G16 verifier address...
+Granting DEFAULT_OWNER_ROLE on Verifier to EnygmaDvp...
+initializing EnygmaDvp smart contract...
+registering VerificationKey no 0
+registering VerificationKey no 1
+registering VerificationKey no 2
+registering VerificationKey no 3
+registering VerificationKey no 4
+registering VerificationKey no 5
+registering VerificationKey no 6
+registering VerificationKey no 7
+registering VerificationKey no 8
+registering VerificationKey no 9
+registering VerificationKey no 10
+registering VerificationKey no 11
+registering VerificationKey no 12
+registering VerificationKey no 13
+registering VerificationKey no 14
+registering VerificationKey no 15
+registering VerificationKey no 16
+registering VerificationKey no 17
+registering VerificationKey no 18
+registering VerificationKey no 19
+registering VerificationKey no 20
+registering VerificationKey no 21
+registering VerificationKey no 22
+registering VerificationKey no 23
+registering VerificationKey no 24
+Registering PrivateMintVerifier...
+PrivateMintVerifier Address: 0x941491477400d6169290d8A8e38854dF892Acc73
+... Registered PrivateMintVerifier
+Registering CoinVaults to EnygmaDvp smart contract address.
+... Registered Erc20CoinVault
+... Registered Erc721CoinVault
+... Registered Erc1155CoinVault
+... Registered EnygmaErc20CoinVault
+Registering AssetGroups to EnygmaDvp smart contract.
+... Registered FungibleAssetGroup
+... Registered NonFungibleAssetGroup
+Registering Fungible-Fungible groupPair to valid exchange groupPairs.
+Registering Fungible-nonFungible groupPair to valid swap groupPairs.
+Registering Erc20 vaultId in Fungibles assetGroup
+Registering Erc721 vaultId in NonFungibles assetGroup
+Registering Enygma ERC20 vaultId in Fungibles assetGroup
+enygma was added into EnygmaErc20CoinVault
+Registering relayer account 0x9E0B331577BB37420231DAc6D199FCb4c7092B87...
+... Registered relayer
+EnygmaDvp has been initialized.

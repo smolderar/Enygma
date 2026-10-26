@@ -1,0 +1,8 @@
+Loading VK from /workspaces/Enygma/enygma_dvp/gnark_circuits/scripts/keys/PrivateMintVK.key
+Patching /workspaces/Enygma/enygma_dvp/contracts/core/contracts/PrivateMintVerifier.sol
+  constants updated
+Compiling with solc...
+  solc ok
+Updating artifact /workspaces/Enygma/enygma_dvp/artifacts/contracts/core/contracts/PrivateMintVerifier.sol/PrivateMintVerifier.json
+  artifact updated
+Done. PrivateMintVerifier is ready to deploy.

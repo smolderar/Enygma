@@ -1,0 +1,41 @@
+Initializing Setup Process
+Generating Proving Key and Veryfing key for PrivateMint
+[90m09:11:55[0m [32mINF[0m [1mcompiling circuit[0m
+[90m09:11:55[0m [32mINF[0m [1mparsed circuit inputs[0m [36mnbPublic=[0m4 [36mnbSecret=[0m3
+[90m09:11:55[0m [32mINF[0m [1mbuilding constraint builder[0m [36mnbConstraints=[0m2049
+[90m09:11:55[0m DBG hash to field function not set, using keccak256 as default
+Initializing Setup Process
+Generating Proving Key and Verifying Key for DvPInitiator
+[90m09:11:55[0m [32mINF[0m [1mcompiling circuit[0m
+[90m09:11:55[0m [32mINF[0m [1mparsed circuit inputs[0m [36mnbPublic=[0m8 [36mnbSecret=[0m20
+[90m09:11:56[0m [32mINF[0m [1mbuilding constraint builder[0m [36mnbConstraints=[0m7675
+Initializing Setup Process
+Generating Proving Key and Verifying Key for DvPDestination
+[90m09:11:58[0m [32mINF[0m [1mcompiling circuit[0m
+[90m09:11:58[0m [32mINF[0m [1mparsed circuit inputs[0m [36mnbPublic=[0m6 [36mnbSecret=[0m19
+[90m09:11:58[0m [32mINF[0m [1mbuilding constraint builder[0m [36mnbConstraints=[0m7376
+Initializing Setup Process
+Generating Proving Key and Verifying Key for Payment
+[90m09:12:00[0m [32mINF[0m [1mcompiling circuit[0m
+[90m09:12:00[0m [32mINF[0m [1mparsed circuit inputs[0m [36mnbPublic=[0m7 [36mnbSecret=[0m20
+[90m09:12:00[0m [32mINF[0m [1mbuilding constraint builder[0m [36mnbConstraints=[0m9888
+Initializing Setup Process
+Generating Proving Key and Verifying Key for Payment2in
+[90m09:12:03[0m [32mINF[0m [1mcompiling circuit[0m
+[90m09:12:03[0m [32mINF[0m [1mparsed circuit inputs[0m [36mnbPublic=[0m10 [36mnbSecret=[0m32
+[90m09:12:03[0m [32mINF[0m [1mbuilding constraint builder[0m [36mnbConstraints=[0m14636
+Initializing Setup Process
+Generating Proving Key and Verifying Key for PaymentFee
+[90m09:12:08[0m [32mINF[0m [1mcompiling circuit[0m
+[90m09:12:08[0m [32mINF[0m [1mparsed circuit inputs[0m [36mnbPublic=[0m8 [36mnbSecret=[0m20
+[90m09:12:08[0m [32mINF[0m [1mbuilding constraint builder[0m [36mnbConstraints=[0m10919
+Initializing Setup Process
+Generating Proving Key and Verifying Key for PaymentRelayerFeePublic
+[90m09:12:12[0m [32mINF[0m [1mcompiling circuit[0m
+[90m09:12:12[0m [32mINF[0m [1mparsed circuit inputs[0m [36mnbPublic=[0m9 [36mnbSecret=[0m23
+[90m09:12:12[0m [32mINF[0m [1mbuilding constraint builder[0m [36mnbConstraints=[0m12228
+Initializing Setup Process
+Generating Proving Key and Verifying Key for UsdrFee
+[90m09:12:16[0m [32mINF[0m [1mcompiling circuit[0m
+[90m09:12:16[0m [32mINF[0m [1mparsed circuit inputs[0m [36mnbPublic=[0m9 [36mnbSecret=[0m19
+[90m09:12:17[0m [32mINF[0m [1mbuilding constraint builder[0m [36mnbConstraints=[0m9642

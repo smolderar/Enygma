@@ -1,0 +1,22 @@
+2026/10/26 09:12:33 WARN: skipping BatchErc1155: open scripts/keys/ERC1155BatchVK.key: open scripts/keys/ERC1155BatchVK.key: no such file or directory
+2026/10/26 09:12:33 WARN: skipping JoinSplitErc20_10_2: open scripts/keys/JoinErc20_10_2VK.key: open scripts/keys/JoinErc20_10_2VK.key: no such file or directory
+2026/10/26 09:12:33 WARN: skipping AuctionNotWinningBid: open scripts/keys/AuctionNotWinningVK.key: open scripts/keys/AuctionNotWinningVK.key: no such file or directory
+  exported DvPInitiator → ../build/DvPInitiator.json
+2026/10/26 09:12:33 WARN: skipping OwnershipErc1155NonFungible: open scripts/keys/OwnershipERC1155NonFungibleVK.key: open scripts/keys/OwnershipERC1155NonFungibleVK.key: no such file or directory
+2026/10/26 09:12:33 WARN: skipping JoinSplitErc1155: open scripts/keys/JoiSplitERC1155VK.key: open scripts/keys/JoiSplitERC1155VK.key: no such file or directory
+2026/10/26 09:12:33 WARN: skipping AuctionBid: open scripts/keys/AuctionBidVK.key: open scripts/keys/AuctionBidVK.key: no such file or directory
+2026/10/26 09:12:33 WARN: skipping JoinSplitErc1155WithAuditor: open scripts/keys/JoinSplitERC1155AuditorVK.key: open scripts/keys/JoinSplitERC1155AuditorVK.key: no such file or directory
+2026/10/26 09:12:33 WARN: skipping OwnershipErc1155NonFungibleWithAuditor: open scripts/keys/OwnershipERC1155NonFungibleAuditorVK.key: open scripts/keys/OwnershipERC1155NonFungibleAuditorVK.key: no such file or directory
+2026/10/26 09:12:33 WARN: skipping BatchErc1155NonFungibleWithAuditor: open scripts/keys/ERC1155BatchAuditorVK.key: open scripts/keys/ERC1155BatchAuditorVK.key: no such file or directory
+2026/10/26 09:12:33 WARN: skipping OwnershipErc721WithAuditor: open scripts/keys/OwnershipERC721AuditorVK.key: open scripts/keys/OwnershipERC721AuditorVK.key: no such file or directory
+2026/10/26 09:12:33 WARN: skipping JoinSplitErc20WithAuditor: open scripts/keys/JoinERC20AuditorVK.key: open scripts/keys/JoinERC20AuditorVK.key: no such file or directory
+2026/10/26 09:12:33 WARN: skipping OwnershipErc721: open scripts/keys/OwnershipERC721VK.key: open scripts/keys/OwnershipERC721VK.key: no such file or directory
+2026/10/26 09:12:33 WARN: skipping OwnershipErc1155Fungible: open scripts/keys/OwnershipERC1155FungibleVK.key: open scripts/keys/OwnershipERC1155FungibleVK.key: no such file or directory
+2026/10/26 09:12:33 WARN: skipping AuctionInit: open scripts/keys/AuctionInitVK.key: open scripts/keys/AuctionInitVK.key: no such file or directory
+2026/10/26 09:12:33 WARN: skipping JoinSplitErc20_10_2_WithAuditor: open scripts/keys/JoinERC20_10_2AuditorVK.key: open scripts/keys/JoinERC20_10_2AuditorVK.key: no such file or directory
+2026/10/26 09:12:33 WARN: skipping AuctionInit_Auditor: open scripts/keys/AuctionInitAuditorVK.key: open scripts/keys/AuctionInitAuditorVK.key: no such file or directory
+  exported DvPDestination → ../build/DvPDestination.json
+  exported Payment → ../build/Payment.json
+2026/10/26 09:12:33 WARN: skipping AuctionPrivateOpening: open scripts/keys/AuctionPrivateOpeningVK.key: open scripts/keys/AuctionPrivateOpeningVK.key: no such file or directory
+2026/10/26 09:12:33 WARN: skipping AuctionBid_Auditor: open scripts/keys/AuctionBidAuditorVK.key: open scripts/keys/AuctionBidAuditorVK.key: no such file or directory
+Done: 3/21 VKs exported to ../build
