@@ -1,0 +1,1196 @@
+duplicate definition - InvalidNumberOfOutputs()
+Started HTTP and WebSocket JSON-RPC server at http://0.0.0.0:8545/
+
+Accounts
+========
+Account #0: 0x0F1013e0e46B97144b25b3131668EF99858BD8D0 (10000 ETH)
+
+Account #1: 0xD2C3b34Abae5664986C8cf0F14d1D434Ac894768 (10000 ETH)
+
+Account #2: 0x9E0B331577BB37420231DAc6D199FCb4c7092B87 (10000 ETH)
+
+Account #3: 0x7b5e6fcFCF5550f1B78bF5a7f32B7eE88137d156 (10000 ETH)
+
+Account #4: 0xe769049A909039C5C53EdCBF07da1b58f3960BBE (10000 ETH)
+
+Account #5: 0x4A1AB905d8b8c500aa796Dc96a02169a06CB7cDE (10000 ETH)
+
+Account #6: 0x428969A6b4b7Ad751d54D0D75BeA8f66977cFa75 (10000 ETH)
+
+Account #7: 0x55F6Cd76b02e4236f277ca0A88e831f407a81CDf (10000 ETH)
+
+Account #8: 0xA39C23f48848ebF3B97D49f132F229fE5DB95C53 (10000 ETH)
+
+Account #9: 0xb7d00005bc4E8A782FC552f1469b4DC355E3CD68 (10000 ETH)
+
+[32meth_getBlockByNumber[0m
+[32meth_maxPriorityFeePerGas[0m
+[32meth_estimateGas[0m
+[32meth_getTransactionCount[0m
+[32meth_sendRawTransaction[0m
+  Contract deployment: <UnrecognizedContract>
+  Contract address:    0x32b025d7f97fc9a9bdb4b57bb233daf1d8bd6b82
+  Transaction:         0xe6726133243dc5807da64687b52f5aa3dd5d547c29b995b5f9fb01ffb944ad17
+  From:                0x0f1013e0e46b97144b25b3131668ef99858bd8d0
+  Value:               0 ETH
+  Gas used:            2157126 of 2157126
+  Block #1:            0x29399c5fc1928b43f9a5e84c62e9f93df6d9266f58b4ff424d9b61fc1316c699
+
+[32meth_getTransactionReceipt[0m
+[32meth_getBlockByNumber[0m
+[32meth_maxPriorityFeePerGas[0m
+[32meth_estimateGas[0m
+[32meth_getTransactionCount[0m
+[32meth_sendRawTransaction[0m
+  Contract deployment: GenericGroth16Verifier
+  Contract address:    0x006ceb75982dfc07a99cf6674a60573257e8f07d
+  Transaction:         0x9909d84aeba3c7830ae5dfc2408c3e90b9b4d78938dbfa5756f926eec2ab5f06
+  From:                0x0f1013e0e46b97144b25b3131668ef99858bd8d0
+  Value:               0 ETH
+  Gas used:            909477 of 909477
+  Block #2:            0x8335d97092fe06d094ee1faf1e77b5bb0e3c7c4044a22e4d1992181ff1111f63
+
+[32meth_getTransactionReceipt[0m
+[32meth_getBlockByNumber[0m
+[32meth_maxPriorityFeePerGas[0m
+[32meth_estimateGas[0m
+[32meth_getTransactionCount[0m
+[32meth_sendRawTransaction[0m
+  Contract deployment: Verifier
+  Contract address:    0xadf42e56d77abbbe9f77a1aa95cf3827a7b78808
+  Transaction:         0x9333f93a1c1d702bab76afa325daa138db921c070e31cb2831c55bfa6bdeee8d
+  From:                0x0f1013e0e46b97144b25b3131668ef99858bd8d0
+  Value:               0 ETH
+  Gas used:            1127013 of 1127013
+  Block #3:            0x68600f1d8e618eefbd1841a74784420834609ea7688fc8df155e63cf5ec4b073
+
+[32meth_getTransactionReceipt[0m
+[32meth_getBlockByNumber[0m
+[32meth_maxPriorityFeePerGas[0m
+[32meth_estimateGas[0m
+[32meth_getTransactionCount[0m
+[32meth_sendRawTransaction[0m
+  Contract deployment: PrivateMintVerifier
+  Contract address:    0x941491477400d6169290d8a8e38854df892acc73
+  Transaction:         0xc3c300e2fbd47ce3ea6f37dab0f6a8e1eee852905ffaea662b50b0877f1eae86
+  From:                0x0f1013e0e46b97144b25b3131668ef99858bd8d0
+  Value:               0 ETH
+  Gas used:            1002086 of 1002086
+  Block #4:            0xec6ac3ced6fc2de54789fc4176d6ba31c8b5b7eb7f5c17942041623396c67bd0
+
+[32meth_getTransactionReceipt[0m
+[32meth_getBlockByNumber[0m
+[32meth_maxPriorityFeePerGas[0m
+[32meth_estimateGas[0m
+[32meth_getTransactionCount[0m
+[32meth_sendRawTransaction[0m
+  Contract deployment: <UnrecognizedContract>
+  Contract address:    0xb8479ebd61a90ebfa7c44b4cbb137dd04f3fc189
+  Transaction:         0x46ee9d87a1f32c3fd397553e37310cae157392f5e8ee4b695974e6abcd36b391
+  From:                0x0f1013e0e46b97144b25b3131668ef99858bd8d0
+  Value:               0 ETH
+  Gas used:            3569887 of 3569887
+  Block #5:            0x75c207caed891f08f2d5253aeca863ced3bec3362a748647923ec017cdd99211
+
+[32meth_getTransactionReceipt[0m
+[32meth_getBlockByNumber[0m
+[32meth_maxPriorityFeePerGas[0m
+[32meth_estimateGas[0m
+[32meth_getTransactionCount[0m
+[32meth_sendRawTransaction[0m
+  Contract deployment: PoseidonWrapper
+  Contract address:    0x1959d67b2d378c8e62750e0025e2b4cd988ab0c7
+  Transaction:         0x700ce61065e9960edd9772ac7fad6573c3d6799470259a0a8a48c00323f17d55
+  From:                0x0f1013e0e46b97144b25b3131668ef99858bd8d0
+  Value:               0 ETH
+  Gas used:            210064 of 210064
+  Block #6:            0x845d95f7d4362688990c746c2f14c9843be3d232a8dff3dadf57c3c7e16750d6
+
+[32meth_getTransactionReceipt[0m
+[32meth_getBlockByNumber[0m
+[32meth_maxPriorityFeePerGas[0m
+[32meth_estimateGas[0m
+[32meth_getTransactionCount[0m
+[32meth_sendRawTransaction[0m
+  Contract deployment: EnygmaDvp
+  Contract address:    0x6b01819c927b66eb1ed17a276fc60359b502d3de
+  Transaction:         0x02ec0264ee1834787098edc3d6650c5969c501ace9550bde3c465ec04080d7d6
+  From:                0x0f1013e0e46b97144b25b3131668ef99858bd8d0
+  Value:               0 ETH
+  Gas used:            9580649 of 9580649
+  Block #7:            0xb7e975fa5668e90766470ee0042846ef44b523335349d4a568d037e25ec12f94
+
+[32meth_getTransactionReceipt[0m
+[32meth_getBlockByNumber[0m
+[32meth_maxPriorityFeePerGas[0m
+[32meth_estimateGas[0m
+[32meth_getTransactionCount[0m
+[32meth_sendRawTransaction[0m
+  Contract deployment: RaylsERC20
+  Contract address:    0xdcdb2ea6361bf78791ba202cacf96b849af73b3f
+  Transaction:         0xe3d0dc784c6f89f466654feceab589f58e9dd16fc6bc891938e43fd5cd766c34
+  From:                0x0f1013e0e46b97144b25b3131668ef99858bd8d0
+  Value:               0 ETH
+  Gas used:            1124821 of 1124821
+  Block #8:            0x5f99bd8ed2c69dd0c3fbc08d80993e5c75082abab312fb21e51447a7442b9052
+
+[32meth_getTransactionReceipt[0m
+[32meth_getBlockByNumber[0m
+[32meth_maxPriorityFeePerGas[0m
+[32meth_estimateGas[0m
+[32meth_getTransactionCount[0m
+[32meth_sendRawTransaction[0m
+  Contract deployment: RaylsERC721
+  Contract address:    0xa34b0bb5f2d8c1674eb7cf53e06b813a31c5509c
+  Transaction:         0x8e6e519f81cb166a3a97e730003ded213ebe27a43f946e8378ad9520a0f6e7ef
+  From:                0x0f1013e0e46b97144b25b3131668ef99858bd8d0
+  Value:               0 ETH
+  Gas used:            1453584 of 1453584
+  Block #9:            0xa26a6f927ad5cdaea074cc4654df77965c42141d56f65cfeee512eb18c5b713f
+
+[32meth_getTransactionReceipt[0m
+[32meth_getBlockByNumber[0m
+[32meth_maxPriorityFeePerGas[0m
+[32meth_estimateGas[0m
+[32meth_getTransactionCount[0m
+[32meth_sendRawTransaction[0m
+  Contract deployment: RaylsERC1155
+  Contract address:    0x06ea154c5942447603397483566646ca3565d11e
+  Transaction:         0xddb56dcec4b21b1a571f89e070d7e2d6d7fa5af06dda396a88017e8977b25dd2
+  From:                0x0f1013e0e46b97144b25b3131668ef99858bd8d0
+  Value:               0 ETH
+  Gas used:            2982160 of 2982160
+  Block #10:           0x9689da438f7b014768da5659087554679991508198d12eb24216880aca2415bd
+
+[32meth_getTransactionReceipt[0m
+[32meth_getBlockByNumber[0m
+[32meth_maxPriorityFeePerGas[0m
+[32meth_estimateGas[0m
+[32meth_getTransactionCount[0m
+[32meth_sendRawTransaction[0m
+  Contract deployment: Erc20CoinVault
+  Contract address:    0x20c856d1d33a80f574ffd67d411dbc7ce1c1f1b9
+  Transaction:         0x237c8827e5038e0722a14886723f269527ef9338c4330c6e9980d9ffbbbf50c3
+  From:                0x0f1013e0e46b97144b25b3131668ef99858bd8d0
+  Value:               0 ETH
+  Gas used:            3817620 of 3817620
+  Block #11:           0x9d0efaed4397f5630e3e94dfa68da6877e6595f6b017300fecb6c3cd0d1d0f69
+
+[32meth_getTransactionReceipt[0m
+[32meth_getBlockByNumber[0m
+[32meth_maxPriorityFeePerGas[0m
+[32meth_estimateGas[0m
+[32meth_getTransactionCount[0m
+[32meth_sendRawTransaction[0m
+  Contract deployment: Erc721CoinVault
+  Contract address:    0xffe06f757d59b276bc4bece9e26cb2de1e8a2198
+  Transaction:         0x5245ce8af849634fee2f02023a27f26a4c4ec05bb9847a2469406351d03188a9
+  From:                0x0f1013e0e46b97144b25b3131668ef99858bd8d0
+  Value:               0 ETH
+  Gas used:            3008492 of 3008492
+  Block #12:           0x1e10a479e891d472fca703f3e9a58f0b31f2fdf6904b39a5d4ef48c03eb936fb
+
+[32meth_getTransactionReceipt[0m
+[32meth_getBlockByNumber[0m
+[32meth_maxPriorityFeePerGas[0m
+[32meth_estimateGas[0m
+[32meth_getTransactionCount[0m
+[32meth_sendRawTransaction[0m
+  Contract deployment: Erc1155CoinVault
+  Contract address:    0xac7d522918a535f15fb47c08ea66f7ae1bfea648
+  Transaction:         0x53a5e5196321f8876ef17a63ae3f4cbfeadd16dd6320ba2d88d7562b8c60deb2
+  From:                0x0f1013e0e46b97144b25b3131668ef99858bd8d0
+  Value:               0 ETH
+  Gas used:            3701357 of 3701357
+  Block #13:           0x29eaf17df4feab8733746d00364dbfafd661a77430be0a96a33935e36afcb55f
+
+[32meth_getTransactionReceipt[0m
+[32meth_getBlockByNumber[0m
+[32meth_maxPriorityFeePerGas[0m
+[32meth_estimateGas[0m
+[32meth_getTransactionCount[0m
+[32meth_sendRawTransaction[0m
+  Contract deployment: EnygmaErc20CoinVault
+  Contract address:    0x594dbfa06ed274555ef7e8cbc99df33bfbdaa2af
+  Transaction:         0x85942cb3d4bb3286c48b9b94a64a6bab6a7df33d3562c1cc4078f60b32dee1ce
+  From:                0x0f1013e0e46b97144b25b3131668ef99858bd8d0
+  Value:               0 ETH
+  Gas used:            2834252 of 2834252
+  Block #14:           0x59fb3698e04f53bc8e451be5abf4f99ab4033f31c4f8784254388dc9c5be66fd
+
+[32meth_getTransactionReceipt[0m
+[32meth_getBlockByNumber[0m
+[32meth_maxPriorityFeePerGas[0m
+[32meth_estimateGas[0m
+[32meth_getTransactionCount[0m
+[32meth_sendRawTransaction[0m
+  Contract deployment: AssetGroup
+  Contract address:    0xd908baee382191d15e479589d9661a9e9b55b827
+  Transaction:         0x30c6e8de0ec51b84145aac10c19d5da9a884c77193a0d5ab97e7e3917a11a751
+  From:                0x0f1013e0e46b97144b25b3131668ef99858bd8d0
+  Value:               0 ETH
+  Gas used:            1668620 of 1668620
+  Block #15:           0xca92d3cd6fc2b026932106cf7428ea6c5f9cd518917530a2a1bd01221a2bc269
+
+[32meth_getTransactionReceipt[0m
+[32meth_getBlockByNumber[0m
+[32meth_maxPriorityFeePerGas[0m
+[32meth_estimateGas[0m
+[32meth_getTransactionCount[0m
+[32meth_sendRawTransaction[0m
+  Contract deployment: AssetGroup
+  Contract address:    0x4d5509f0d2d27a41ab31a8212928134034615177
+  Transaction:         0xe8264f5612d5f7564b63f7f56fe3894f71f19526fcd3876e7555da5948525301
+  From:                0x0f1013e0e46b97144b25b3131668ef99858bd8d0
+  Value:               0 ETH
+  Gas used:            1668620 of 1668620
+  Block #16:           0xda61f9ad7ffbb7cb6324c6a8b6bc0040eb041f6e8b8bf454dcd460c4a1000b15
+
+[32meth_getTransactionReceipt[0m
+[32meth_getBlockByNumber[0m
+[32meth_maxPriorityFeePerGas[0m
+[32meth_getTransactionCount[0m
+[32meth_sendRawTransaction[0m
+  Contract call:       RaylsERC20#mint
+  Transaction:         0x761d569725a1c06306aa2dae46ab80c3017290334886e76ae1bb74cbb398fc58
+  From:                0x0f1013e0e46b97144b25b3131668ef99858bd8d0
+  To:                  0xdcdb2ea6361bf78791ba202cacf96b849af73b3f
+  Value:               0 ETH
+  Gas used:            70701 of 6000000
+  Block #17:           0x9720482e385548ceaccf50a7cc0291b0212a1fe6c2644eafe85688965f9556e1
+
+[32meth_getTransactionReceipt[0m
+[32meth_getBlockByNumber[0m
+[32meth_maxPriorityFeePerGas[0m
+[32meth_getTransactionCount[0m
+[32meth_sendRawTransaction[0m
+  Contract call:       RaylsERC20#approve
+  Transaction:         0x419220ccef1526838e0397b1320ab9a0165379a178d91941771b7524c07d66a2
+  From:                0x0f1013e0e46b97144b25b3131668ef99858bd8d0
+  To:                  0xdcdb2ea6361bf78791ba202cacf96b849af73b3f
+  Value:               0 ETH
+  Gas used:            45981 of 6000000
+  Block #18:           0x6e2e72f39120a1c1ee1abde4ba4b2608fb5c3ba370bcceba4e896dd6e005492d
+
+[32meth_getTransactionReceipt[0m
+[32meth_getBlockByNumber[0m
+[32meth_maxPriorityFeePerGas[0m
+[32meth_getTransactionCount[0m
+[31meth_sendRawTransaction[0m
+  Contract call:       Erc20CoinVault#depositV2
+  Transaction:         0x4659b42c59447aaa3bbd304d244a0ffcda9e9067593a4408f2907b51d10f5829
+  From:                0x0f1013e0e46b97144b25b3131668ef99858bd8d0
+  To:                  0x20c856d1d33a80f574ffd67d411dbc7ce1c1f1b9
+  Value:               0 ETH
+  Gas used:            73670 of 6000000
+  Block #19:           0xc15871e9f613554fcecef7bb600e2b0997920f55730b0a2d318867f58a6a4340
+
+  Error: reverted with reason string 'Address: call to non-contract'
+
+[32meth_getBlockByNumber[0m
+[32meth_maxPriorityFeePerGas[0m
+[32meth_getTransactionCount[0m
+[32meth_sendRawTransaction[0m
+  Contract call:       RaylsERC20#mint
+  Transaction:         0x2d402b414fc94bb4fa7c96d35f888ba61ac13fab45ef991f2978376f640e1b93
+  From:                0x0f1013e0e46b97144b25b3131668ef99858bd8d0
+  To:                  0xdcdb2ea6361bf78791ba202cacf96b849af73b3f
+  Value:               0 ETH
+  Gas used:            36501 of 6000000
+  Block #20:           0x978818fdee7428d3f0bbf6bcc72592f02e958737eed75d489f2d464edc8d390d
+
+[32meth_getTransactionReceipt[0m
+[32meth_getBlockByNumber[0m
+[32meth_maxPriorityFeePerGas[0m
+[32meth_getTransactionCount[0m
+[32meth_sendRawTransaction[0m
+  Contract call:       RaylsERC20#approve
+  Transaction:         0x76342539f987ab26b47559d3e48638329fa0d2bd8cefc3c22de7bb10a03e0ce3
+  From:                0x0f1013e0e46b97144b25b3131668ef99858bd8d0
+  To:                  0xdcdb2ea6361bf78791ba202cacf96b849af73b3f
+  Value:               0 ETH
+  Gas used:            28881 of 6000000
+  Block #21:           0xc13652111120aa0bc7a479f2a64d5bc5a1987c6681e46a05fdd9aa9f769dd203
+
+[32meth_getTransactionReceipt[0m
+[32meth_getBlockByNumber[0m
+[32meth_maxPriorityFeePerGas[0m
+[32meth_getTransactionCount[0m
+[31meth_sendRawTransaction[0m
+  Contract call:       Erc20CoinVault#depositV2
+  Transaction:         0x0622a26f514ef47a243b92feb8e9950e8e1f4c9fd15f105fcbedc17f55fd1958
+  From:                0x0f1013e0e46b97144b25b3131668ef99858bd8d0
+  To:                  0x20c856d1d33a80f574ffd67d411dbc7ce1c1f1b9
+  Value:               0 ETH
+  Gas used:            73580 of 6000000
+  Block #22:           0x768fbebb39821d19c9fe39dfe86fce5d1ecfb838148d1ce090aa29d05a3f9b68
+
+  Error: reverted with reason string 'Address: call to non-contract'
+
+[32meth_getBlockByNumber[0m
+[32meth_maxPriorityFeePerGas[0m
+[32meth_getTransactionCount[0m
+[32meth_sendRawTransaction[0m
+  Contract call:       RaylsERC20#mint
+  Transaction:         0xadd1b8cae703ea21af783934da69041e836fe1d80ff3891ba516c657a2f9fb05
+  From:                0x0f1013e0e46b97144b25b3131668ef99858bd8d0
+  To:                  0xdcdb2ea6361bf78791ba202cacf96b849af73b3f
+  Value:               0 ETH
+  Gas used:            36501 of 6000000
+  Block #23:           0xdbc82745479df7895a0e13d7c98ac3b50f212d15eaa90ad341df1c0d2f5c6377
+
+[32meth_getTransactionReceipt[0m
+[32meth_getBlockByNumber[0m
+[32meth_maxPriorityFeePerGas[0m
+[32meth_getTransactionCount[0m
+[32meth_sendRawTransaction[0m
+  Contract call:       RaylsERC20#approve
+  Transaction:         0xab5ee6aa4722ff4b8afe7e963dcdf8af09d658ed8162ca5ac0674127d1dbf13b
+  From:                0x0f1013e0e46b97144b25b3131668ef99858bd8d0
+  To:                  0xdcdb2ea6361bf78791ba202cacf96b849af73b3f
+  Value:               0 ETH
+  Gas used:            26081 of 6000000
+  Block #24:           0xc1b7f5bed10b7d86546e69a174863c2da72d84687c98c53af42826eee1844d34
+
+[32meth_getTransactionReceipt[0m
+[32meth_getBlockByNumber[0m
+[32meth_maxPriorityFeePerGas[0m
+[32meth_getTransactionCount[0m
+[31meth_sendRawTransaction[0m
+  Contract call:       Erc20CoinVault#depositV2
+  Transaction:         0xbb3aca4c6c415ecdcf50c9406676500560de909d2ee0b0a1129979299616e1ba
+  From:                0x0f1013e0e46b97144b25b3131668ef99858bd8d0
+  To:                  0x20c856d1d33a80f574ffd67d411dbc7ce1c1f1b9
+  Value:               0 ETH
+  Gas used:            73700 of 6000000
+  Block #25:           0xd7c11a38a3b72ff6296cc111f1e52ccd6d7f679ba31d0652bdb63f8523648f98
+
+  Error: reverted with reason string 'Address: call to non-contract'
+
+[32meth_getBlockByNumber[0m
+[32meth_maxPriorityFeePerGas[0m
+[32meth_getTransactionCount[0m
+[32meth_sendRawTransaction[0m
+  Contract call:       RaylsERC20#mint
+  Transaction:         0x639cb24ed46f7ec447a22454fdde1c8161d9939b516c84fdaaf110a157d6fa65
+  From:                0x0f1013e0e46b97144b25b3131668ef99858bd8d0
+  To:                  0xdcdb2ea6361bf78791ba202cacf96b849af73b3f
+  Value:               0 ETH
+  Gas used:            36501 of 6000000
+  Block #26:           0xbc7a65be0f035ec53f03b76e97d7e373a8b292f850b961d31c8a3933439b17ff
+
+[32meth_getTransactionReceipt[0m
+[32meth_getBlockByNumber[0m
+[32meth_maxPriorityFeePerGas[0m
+[32meth_getTransactionCount[0m
+[32meth_sendRawTransaction[0m
+  Contract call:       RaylsERC20#approve
+  Transaction:         0x19e76dd9f0a226c55862e674061cf93edaa6fae69fedff306546bd313576778c
+  From:                0x0f1013e0e46b97144b25b3131668ef99858bd8d0
+  To:                  0xdcdb2ea6361bf78791ba202cacf96b849af73b3f
+  Value:               0 ETH
+  Gas used:            26081 of 6000000
+  Block #27:           0x88748f839b63a97a53666af7fe627b905b76424ca54eb20cb54fadd8643c895e
+
+[32meth_getTransactionReceipt[0m
+[32meth_getBlockByNumber[0m
+[32meth_maxPriorityFeePerGas[0m
+[32meth_getTransactionCount[0m
+[31meth_sendRawTransaction[0m
+  Contract call:       Erc20CoinVault#depositV2
+  Transaction:         0x903180c0a6957050010b3364abd0f530e87981c2d04afd1a617bfb589daf9cf9
+  From:                0x0f1013e0e46b97144b25b3131668ef99858bd8d0
+  To:                  0x20c856d1d33a80f574ffd67d411dbc7ce1c1f1b9
+  Value:               0 ETH
+  Gas used:            73760 of 6000000
+  Block #28:           0x3c8235c5051ef2e0c09a02ed66ecce05a63a4ccf31f3714c0abcf649d7d245e1
+
+  Error: reverted with reason string 'Address: call to non-contract'
+
+[32meth_getTransactionCount[0m
+[32meth_gasPrice[0m
+[32meth_sendRawTransaction[0m
+  Transaction:         0xbd8b7707229b63d4b251eca2020e4bd3c47818e4b67676ebd0dd99fee7386408
+  From:                0x0f1013e0e46b97144b25b3131668ef99858bd8d0
+  To:                  0x106521eab32cb29fc3ec6b080f4b582c854d67ab
+  Value:               0.5 ETH
+  Gas used:            21000 of 21000
+  Block #29:           0x895adbe34a23512cdd2e376b46190cbebdc28cb3f107058b0674d6eeeca24af8
+
+[32meth_getTransactionReceipt[0m
+[32meth_getBlockByNumber[0m
+[32meth_maxPriorityFeePerGas[0m
+[32meth_getTransactionCount[0m
+[32meth_sendRawTransaction[0m
+  Contract call:       RaylsERC20#mint
+  Transaction:         0xf9c69ae6c1f9b7ad93b8d0d08660c4209a3e788e1662f71b16769a62ab1931bf
+  From:                0x0f1013e0e46b97144b25b3131668ef99858bd8d0
+  To:                  0xdcdb2ea6361bf78791ba202cacf96b849af73b3f
+  Value:               0 ETH
+  Gas used:            36501 of 6000000
+  Block #30:           0xd430b8431bc7e6af1ab0bcf54f96a9e3b770e54ba1616cdbd3ce5ce12b2c9936
+
+[32meth_getTransactionReceipt[0m
+[32meth_getBlockByNumber[0m
+[32meth_maxPriorityFeePerGas[0m
+[32meth_getTransactionCount[0m
+[32meth_sendRawTransaction[0m
+  Contract call:       RaylsERC20#approve
+  Transaction:         0xceb25484416ddbb43731bc69ae2191e30e3ec98df5a455980ceb05592e050071
+  From:                0x0f1013e0e46b97144b25b3131668ef99858bd8d0
+  To:                  0xdcdb2ea6361bf78791ba202cacf96b849af73b3f
+  Value:               0 ETH
+  Gas used:            26081 of 6000000
+  Block #31:           0xa812eed24bc9db536c75693186cf855ab72f0d1433bdbc232f01f9775e27c67e
+
+[32meth_getTransactionReceipt[0m
+[32meth_getBlockByNumber[0m
+[32meth_maxPriorityFeePerGas[0m
+[32meth_getTransactionCount[0m
+[31meth_sendRawTransaction[0m
+  Contract call:       Erc20CoinVault#depositV2
+  Transaction:         0x0bebdb96ef9b2ccba5da2455e564cdc6c57629dd8b527afd893222668d809b90
+  From:                0x0f1013e0e46b97144b25b3131668ef99858bd8d0
+  To:                  0x20c856d1d33a80f574ffd67d411dbc7ce1c1f1b9
+  Value:               0 ETH
+  Gas used:            73700 of 6000000
+  Block #32:           0x31d08c533300328ce2fedcaa9303b5d5390face23b81a53dd13b272592afd217
+
+  Error: reverted with reason string 'Address: call to non-contract'
+
+[32meth_getTransactionCount[0m
+[32meth_gasPrice[0m
+[32meth_sendRawTransaction[0m
+  Transaction:         0x8d96970c379f3412b481965e5e0edec8aef7dd5deef77c03fce3916f610891dd
+  From:                0x0f1013e0e46b97144b25b3131668ef99858bd8d0
+  To:                  0x088f63ca09713186842d01d9b001c008f7d108eb
+  Value:               0.5 ETH
+  Gas used:            21000 of 21000
+  Block #33:           0xc2b91c82122de03e3ce5e5fdc7625cfd9b719265fbf0beed36781851a2815821
+
+[32meth_getTransactionReceipt[0m
+[32meth_getBlockByNumber[0m
+[32meth_maxPriorityFeePerGas[0m
+[32meth_getTransactionCount[0m
+[32meth_sendRawTransaction[0m
+  Contract call:       RaylsERC20#mint
+  Transaction:         0xe37c68ce70870a5e5c695c93c4b4e842b282d92bdfdf2688de339db467d04ff6
+  From:                0x0f1013e0e46b97144b25b3131668ef99858bd8d0
+  To:                  0xdcdb2ea6361bf78791ba202cacf96b849af73b3f
+  Value:               0 ETH
+  Gas used:            36501 of 6000000
+  Block #34:           0x2a3a1680d1795ead4a3090b69d5985a1aad7ff86a1ccd06f6e2e2efc3761f5a1
+
+[32meth_getTransactionReceipt[0m
+[32meth_getBlockByNumber[0m
+[32meth_maxPriorityFeePerGas[0m
+[32meth_getTransactionCount[0m
+[32meth_sendRawTransaction[0m
+  Contract call:       RaylsERC20#approve
+  Transaction:         0x3ba7b50cc8afa864521212338aa2f7147ddf6f0ad21245302936e20f60d95a85
+  From:                0x0f1013e0e46b97144b25b3131668ef99858bd8d0
+  To:                  0xdcdb2ea6361bf78791ba202cacf96b849af73b3f
+  Value:               0 ETH
+  Gas used:            26081 of 6000000
+  Block #35:           0x8045b599ac45022bdb4dec6641e62902b1cd590a746e662b729f46dfc845dc3b
+
+[32meth_getTransactionReceipt[0m
+[32meth_getBlockByNumber[0m
+[32meth_maxPriorityFeePerGas[0m
+[32meth_getTransactionCount[0m
+[31meth_sendRawTransaction[0m
+  Contract call:       Erc20CoinVault#depositV2
+  Transaction:         0x1de5cc5257892d84d6e055388084fdca1c199f07a3a7617bb327b69c990fbafa
+  From:                0x0f1013e0e46b97144b25b3131668ef99858bd8d0
+  To:                  0x20c856d1d33a80f574ffd67d411dbc7ce1c1f1b9
+  Value:               0 ETH
+  Gas used:            73520 of 6000000
+  Block #36:           0x7750c8926fe3fa41b21ba53bbb1b6ad420f4dac30b96c225ab358b3a3075d43e
+
+  Error: reverted with reason string 'Address: call to non-contract'
+
+[32meth_getTransactionCount[0m
+[32meth_gasPrice[0m
+[32meth_sendRawTransaction[0m
+  Transaction:         0x69851483a191995f6a0435730223cf214691567ca7f968f5232d14e96a51753d
+  From:                0x0f1013e0e46b97144b25b3131668ef99858bd8d0
+  To:                  0x34aada1faab63886fcf4944d4adbf6c6b1e13bb2
+  Value:               0.5 ETH
+  Gas used:            21000 of 21000
+  Block #37:           0x051f1c2517d14965980641a03c1beb559872f21972d60fae096ebb20a82473d5
+
+[32meth_getTransactionReceipt[0m
+[32meth_getBlockByNumber[0m
+[32meth_maxPriorityFeePerGas[0m
+[32meth_getTransactionCount[0m
+[32meth_sendRawTransaction[0m
+  Contract call:       RaylsERC20#mint
+  Transaction:         0xa6c2060650ee9e717d5c0d85d5c1b19743f6065ac465ee97bb0dcdf5fe35a106
+  From:                0x0f1013e0e46b97144b25b3131668ef99858bd8d0
+  To:                  0xdcdb2ea6361bf78791ba202cacf96b849af73b3f
+  Value:               0 ETH
+  Gas used:            36501 of 6000000
+  Block #38:           0x6bafe7bf34e0f5a34be1ee0ac52892925f31612839ec4daf83391c0e09ce92e3
+
+[32meth_getTransactionReceipt[0m
+[32meth_getBlockByNumber[0m
+[32meth_maxPriorityFeePerGas[0m
+[32meth_getTransactionCount[0m
+[32meth_sendRawTransaction[0m
+  Contract call:       RaylsERC20#approve
+  Transaction:         0xfd2e5dc130be3dbf5bbfb4e94369ff9571a6cad48f150f25293bc4d8a6f49b05
+  From:                0x0f1013e0e46b97144b25b3131668ef99858bd8d0
+  To:                  0xdcdb2ea6361bf78791ba202cacf96b849af73b3f
+  Value:               0 ETH
+  Gas used:            26081 of 6000000
+  Block #39:           0x9c84ba5c6ed3165e3291d375607f311afc56d4494946632ea9c61efe4a299be4
+
+[32meth_getTransactionReceipt[0m
+[32meth_getBlockByNumber[0m
+[32meth_maxPriorityFeePerGas[0m
+[32meth_getTransactionCount[0m
+[31meth_sendRawTransaction[0m
+  Contract call:       Erc20CoinVault#depositV2
+  Transaction:         0xc3316d4ae6ade8c6fd57eed74f22e58c7c39fa62b83aa1fb6ba31e37cc3ace00
+  From:                0x0f1013e0e46b97144b25b3131668ef99858bd8d0
+  To:                  0x20c856d1d33a80f574ffd67d411dbc7ce1c1f1b9
+  Value:               0 ETH
+  Gas used:            73670 of 6000000
+  Block #40:           0xd26c0cdbc0e1d5e6671d87de5dd3d389f0266e1ab1b511ed571218676da314a7
+
+  Error: reverted with reason string 'Address: call to non-contract'
+
+[32meth_getTransactionCount[0m
+[32meth_gasPrice[0m
+[32meth_sendRawTransaction[0m
+  Transaction:         0x5807f4bea3c2f20bf8254c8780dd301dbb80a37cde5dc939530a96a8ceb8e38c
+  From:                0x0f1013e0e46b97144b25b3131668ef99858bd8d0
+  To:                  0x44b80276a3ce162856d728ac5cc572d19b3bfd7c
+  Value:               0.5 ETH
+  Gas used:            21000 of 21000
+  Block #41:           0x58b9ea9da48797eb1a8c2e09209fc47d149054af8c5865ef03db94b03762086c
+
+[32meth_getTransactionReceipt[0m
+[32meth_getBlockByNumber[0m
+[32meth_maxPriorityFeePerGas[0m
+[32meth_getTransactionCount[0m
+[32meth_sendRawTransaction[0m
+  Contract call:       RaylsERC20#mint
+  Transaction:         0xe8151ff8e01dd77b982420ce64e16727903da4fcd033846c47a949e487f33473
+  From:                0x0f1013e0e46b97144b25b3131668ef99858bd8d0
+  To:                  0xdcdb2ea6361bf78791ba202cacf96b849af73b3f
+  Value:               0 ETH
+  Gas used:            36501 of 6000000
+  Block #42:           0x68703c3d3ad0273cee04a1c830ac06d9b2b5bb1321c1a704f1b3d747b655773a
+
+[32meth_getTransactionReceipt[0m
+[32meth_getBlockByNumber[0m
+[32meth_maxPriorityFeePerGas[0m
+[32meth_getTransactionCount[0m
+[32meth_sendRawTransaction[0m
+  Contract call:       RaylsERC20#approve
+  Transaction:         0xcb52afbf7a94ec5ac7c9197900f0f458e95d225d979241487962e318e8fbc4bc
+  From:                0x0f1013e0e46b97144b25b3131668ef99858bd8d0
+  To:                  0xdcdb2ea6361bf78791ba202cacf96b849af73b3f
+  Value:               0 ETH
+  Gas used:            26081 of 6000000
+  Block #43:           0xfafb472a0cf390dac779d0205c8202708fc40cbdb2a8624876c3e96d761a6a82
+
+[32meth_getTransactionReceipt[0m
+[32meth_getBlockByNumber[0m
+[32meth_maxPriorityFeePerGas[0m
+[32meth_getTransactionCount[0m
+[31meth_sendRawTransaction[0m
+  Contract call:       Erc20CoinVault#depositV2
+  Transaction:         0x3b2b3496fe45a33f6c8312572de8b10e6d64b9c3cc9e5c366dae5e2a022db2f2
+  From:                0x0f1013e0e46b97144b25b3131668ef99858bd8d0
+  To:                  0x20c856d1d33a80f574ffd67d411dbc7ce1c1f1b9
+  Value:               0 ETH
+  Gas used:            73580 of 6000000
+  Block #44:           0x47deeccabb02d386da4cf1c6623b85535679ebf2446d82869fe39f93d27855c4
+
+  Error: reverted with reason string 'Address: call to non-contract'
+
+[32meth_getTransactionCount[0m
+[32meth_gasPrice[0m
+[32meth_sendRawTransaction[0m
+  Transaction:         0x36e85a249a8eb8490a57e87081ece3f1c255ea549ad7542324befb8aac1ba68f
+  From:                0x0f1013e0e46b97144b25b3131668ef99858bd8d0
+  To:                  0xd1e6997ce94046e703a50dfaf16552f7b34511b7
+  Value:               0.5 ETH
+  Gas used:            21000 of 21000
+  Block #45:           0x2beea8b11625342a6ac5fb5e51ed67cbeb97b32f6edcfdff99b3a73be05b9297
+
+[32meth_getTransactionReceipt[0m
+[32meth_getBlockByNumber[0m
+[32meth_maxPriorityFeePerGas[0m
+[32meth_getTransactionCount[0m
+[32meth_sendRawTransaction[0m
+  Contract call:       RaylsERC20#mint
+  Transaction:         0x4bfc6b7077bdb7d11d4a07ed88424587050d22564e57bf27c442c0a642f6097a
+  From:                0x0f1013e0e46b97144b25b3131668ef99858bd8d0
+  To:                  0xdcdb2ea6361bf78791ba202cacf96b849af73b3f
+  Value:               0 ETH
+  Gas used:            36501 of 6000000
+  Block #46:           0xd2187e9f2c7aa6499d69156db5fc1c22ac326a7d97f87f3188f01979ec07e36b
+
+[32meth_getTransactionReceipt[0m
+[32meth_getBlockByNumber[0m
+[32meth_maxPriorityFeePerGas[0m
+[32meth_getTransactionCount[0m
+[32meth_sendRawTransaction[0m
+  Contract call:       RaylsERC20#approve
+  Transaction:         0xb5c36b82bd0c9ce70dfc155a215f085e04dff4161b54e1c03d6fbbed9221ddcc
+  From:                0x0f1013e0e46b97144b25b3131668ef99858bd8d0
+  To:                  0xdcdb2ea6361bf78791ba202cacf96b849af73b3f
+  Value:               0 ETH
+  Gas used:            26081 of 6000000
+  Block #47:           0x7fc360f23fad250981aa9d0129c15ac06c0a1473ebc28aa7dc0eddc7f2bc312f
+
+[32meth_getTransactionReceipt[0m
+[32meth_getBlockByNumber[0m
+[32meth_maxPriorityFeePerGas[0m
+[32meth_getTransactionCount[0m
+[31meth_sendRawTransaction[0m
+  Contract call:       Erc20CoinVault#depositV2
+  Transaction:         0x2a89fa09a690e911a503568b546696e103cfb013d2bba970d93aa22fcc7b8229
+  From:                0x0f1013e0e46b97144b25b3131668ef99858bd8d0
+  To:                  0x20c856d1d33a80f574ffd67d411dbc7ce1c1f1b9
+  Value:               0 ETH
+  Gas used:            73580 of 6000000
+  Block #48:           0xb0650e96a803a0f525289a34ec450735d54c3229e9c5b3ac99e8fbbaa88f1041
+
+  Error: reverted with reason string 'Address: call to non-contract'
+
+[32meth_getTransactionCount[0m
+[32meth_gasPrice[0m
+[32meth_sendRawTransaction[0m
+  Transaction:         0x84cabcd2ad401a5ec40aa6beb680c0cff1aac1bd052fb0253711286167460795
+  From:                0x0f1013e0e46b97144b25b3131668ef99858bd8d0
+  To:                  0xabe5cdc11fec5dc440107a966317fd448634ea06
+  Value:               0.5 ETH
+  Gas used:            21000 of 21000
+  Block #49:           0x4daa524078d2e18447646d9dfd90f1f1a849b86c587a665c1147dde9015e0f7b
+
+[32meth_getTransactionReceipt[0m
+[32meth_getBlockByNumber[0m
+[32meth_maxPriorityFeePerGas[0m
+[32meth_getTransactionCount[0m
+[32meth_sendRawTransaction[0m
+  Contract call:       RaylsERC20#mint
+  Transaction:         0x7fb0bd406a9ff966ad5e29e1c13e240c4093494f217c5608021111787296d3b0
+  From:                0x0f1013e0e46b97144b25b3131668ef99858bd8d0
+  To:                  0xdcdb2ea6361bf78791ba202cacf96b849af73b3f
+  Value:               0 ETH
+  Gas used:            36501 of 6000000
+  Block #50:           0xe24b5901674b174bb0da0cc7322fc65e602f2f1c24f8f945dc738fd4cce44c2a
+
+[32meth_getTransactionReceipt[0m
+[32meth_getBlockByNumber[0m
+[32meth_maxPriorityFeePerGas[0m
+[32meth_getTransactionCount[0m
+[32meth_sendRawTransaction[0m
+  Contract call:       RaylsERC20#approve
+  Transaction:         0xd07f9a70b1502894fce71a7880290d1f2d7777236fb5a4f584bda067c955a36c
+  From:                0x0f1013e0e46b97144b25b3131668ef99858bd8d0
+  To:                  0xdcdb2ea6361bf78791ba202cacf96b849af73b3f
+  Value:               0 ETH
+  Gas used:            26081 of 6000000
+  Block #51:           0x48da5a35307cc92eb6552e5dafcf2aa8c0e18265d62ca429dbd50a46988ed1c8
+
+[32meth_getTransactionReceipt[0m
+[32meth_getBlockByNumber[0m
+[32meth_maxPriorityFeePerGas[0m
+[32meth_getTransactionCount[0m
+[31meth_sendRawTransaction[0m
+  Contract call:       Erc20CoinVault#depositV2
+  Transaction:         0xf631a538bff382724ea753f4c726bf9624ef8e0c42e881cbc3287f629748c834
+  From:                0x0f1013e0e46b97144b25b3131668ef99858bd8d0
+  To:                  0x20c856d1d33a80f574ffd67d411dbc7ce1c1f1b9
+  Value:               0 ETH
+  Gas used:            73730 of 6000000
+  Block #52:           0xe89d7347bcf8b3d7bf011cb8e70cf91672c70fbbc973a010d1e57ded731765fe
+
+  Error: reverted with reason string 'Address: call to non-contract'
+
+[32meth_getTransactionCount[0m
+[32meth_gasPrice[0m
+[32meth_sendRawTransaction[0m
+  Transaction:         0x5a990b3bf9d26cf3b961d622fcc043e6ec2de711ac0adc2e0cb8c0c44ee8b15e
+  From:                0x0f1013e0e46b97144b25b3131668ef99858bd8d0
+  To:                  0xef3538e5e2a00fbe62b3d4652f3ec57c65c44a17
+  Value:               0.5 ETH
+  Gas used:            21000 of 21000
+  Block #53:           0xdeac8858f67d95f8b420c4cf7e42540785f3d559190be86efb98a5b6b845a024
+
+[32meth_getTransactionReceipt[0m
+[32meth_getBlockByNumber[0m
+[32meth_maxPriorityFeePerGas[0m
+[32meth_getTransactionCount[0m
+[32meth_sendRawTransaction[0m
+  Contract call:       RaylsERC20#mint
+  Transaction:         0x8c2a062dbc71fe2efe70a15533a92d256baeb197d4721edc4486b4a3965a512d
+  From:                0x0f1013e0e46b97144b25b3131668ef99858bd8d0
+  To:                  0xdcdb2ea6361bf78791ba202cacf96b849af73b3f
+  Value:               0 ETH
+  Gas used:            36501 of 6000000
+  Block #54:           0x8230c24fb193919a4b684568b208edc9ee415ebd528d904a8d61d8576ffdbac2
+
+[32meth_getTransactionReceipt[0m
+[32meth_getBlockByNumber[0m
+[32meth_maxPriorityFeePerGas[0m
+[32meth_getTransactionCount[0m
+[32meth_sendRawTransaction[0m
+  Contract call:       RaylsERC20#approve
+  Transaction:         0x7217da46c250d9094fff01c16d87c60399b4e70618f6d40f2d06f8c65648ef81
+  From:                0x0f1013e0e46b97144b25b3131668ef99858bd8d0
+  To:                  0xdcdb2ea6361bf78791ba202cacf96b849af73b3f
+  Value:               0 ETH
+  Gas used:            26081 of 6000000
+  Block #55:           0x413a972602cd6574606022c5a6ba378be34ce589f4ec720f90e4fd2c5f80632e
+
+[32meth_getTransactionReceipt[0m
+[32meth_getBlockByNumber[0m
+[32meth_maxPriorityFeePerGas[0m
+[32meth_getTransactionCount[0m
+[31meth_sendRawTransaction[0m
+  Contract call:       Erc20CoinVault#depositV2
+  Transaction:         0xf27dbfcf31265a8ae90b35be9e56d7fc60365c06d3f5e63c4875093e6757f12a
+  From:                0x0f1013e0e46b97144b25b3131668ef99858bd8d0
+  To:                  0x20c856d1d33a80f574ffd67d411dbc7ce1c1f1b9
+  Value:               0 ETH
+  Gas used:            73700 of 6000000
+  Block #56:           0x7e6836c8461a24bea7cc679e8709ddfd51513003f71e05790427b0fcc0f91fd2
+
+  Error: reverted with reason string 'Address: call to non-contract'
+
+[32meth_getBlockByNumber[0m
+[32meth_maxPriorityFeePerGas[0m
+[32meth_getTransactionCount[0m
+[32meth_sendRawTransaction[0m
+  Contract call:       RaylsERC20#mint
+  Transaction:         0x3e15b22e690cb8d0b698f87e1582dad9581270b8be98f347d8367acc8f36fdd9
+  From:                0x0f1013e0e46b97144b25b3131668ef99858bd8d0
+  To:                  0xdcdb2ea6361bf78791ba202cacf96b849af73b3f
+  Value:               0 ETH
+  Gas used:            36489 of 6000000
+  Block #57:           0x1db019040a8587b8247f849fcc15c36798160c5efdba2156dacd44f63c64d5aa
+
+[32meth_getTransactionReceipt[0m
+[32meth_getBlockByNumber[0m
+[32meth_maxPriorityFeePerGas[0m
+[32meth_getTransactionCount[0m
+[32meth_sendRawTransaction[0m
+  Contract call:       RaylsERC20#approve
+  Transaction:         0xbb4584ade52d091a1927f425a741b2dcecb8e5b5c2cc4967d3f4ad86fac178a3
+  From:                0x0f1013e0e46b97144b25b3131668ef99858bd8d0
+  To:                  0xdcdb2ea6361bf78791ba202cacf96b849af73b3f
+  Value:               0 ETH
+  Gas used:            28881 of 6000000
+  Block #58:           0xb4290d20e53feef6214ddf4ca82481c41a333b2144a9a3c22afa61ca307bd93e
+
+[32meth_getTransactionReceipt[0m
+[32meth_getBlockByNumber[0m
+[32meth_maxPriorityFeePerGas[0m
+[32meth_getTransactionCount[0m
+[31meth_sendRawTransaction[0m
+  Contract call:       Erc20CoinVault#depositV2
+  Transaction:         0x3b3cec3ac6bcda4555de8900e5bb521f29ab966e411bf5febd4bb681b5666d8f
+  From:                0x0f1013e0e46b97144b25b3131668ef99858bd8d0
+  To:                  0x20c856d1d33a80f574ffd67d411dbc7ce1c1f1b9
+  Value:               0 ETH
+  Gas used:            73610 of 6000000
+  Block #59:           0x9d4c9bd59178845b9ede390e81239869d75f5826867129e93cb6a1a42951a27d
+
+  Error: reverted with reason string 'Address: call to non-contract'
+
+[32meth_getBlockByNumber[0m
+[32meth_maxPriorityFeePerGas[0m
+[32meth_getTransactionCount[0m
+[32meth_sendRawTransaction[0m
+  Contract call:       RaylsERC20#mint
+  Transaction:         0xd1cca1fec3b2be680cc096f2ec2b8c6dceefc332579c0ddff789f03facc3bc0c
+  From:                0x0f1013e0e46b97144b25b3131668ef99858bd8d0
+  To:                  0xdcdb2ea6361bf78791ba202cacf96b849af73b3f
+  Value:               0 ETH
+  Gas used:            36489 of 6000000
+  Block #60:           0x12d15493d4721bbf551fc31bdf5853ddbe42ee768c3a1cd36cedd6f0d03cbc3d
+
+[32meth_getTransactionReceipt[0m
+[32meth_getBlockByNumber[0m
+[32meth_maxPriorityFeePerGas[0m
+[32meth_getTransactionCount[0m
+[32meth_sendRawTransaction[0m
+  Contract call:       RaylsERC20#approve
+  Transaction:         0xe91625cbcfab8671132ed931905a125e943df5db1600fa652cfa155ca79627e5
+  From:                0x0f1013e0e46b97144b25b3131668ef99858bd8d0
+  To:                  0xdcdb2ea6361bf78791ba202cacf96b849af73b3f
+  Value:               0 ETH
+  Gas used:            26081 of 6000000
+  Block #61:           0x07e0f943888c7e7a8e412c346c3fe29e50fac2a7268fd48829c3fa3835132607
+
+[32meth_getTransactionReceipt[0m
+[32meth_getBlockByNumber[0m
+[32meth_maxPriorityFeePerGas[0m
+[32meth_getTransactionCount[0m
+[31meth_sendRawTransaction[0m
+  Contract call:       Erc20CoinVault#depositV2
+  Transaction:         0x33821533eddc2931a1f5b31c096dbfafa7f39844e0081c5a81056240d97fd1a7
+  From:                0x0f1013e0e46b97144b25b3131668ef99858bd8d0
+  To:                  0x20c856d1d33a80f574ffd67d411dbc7ce1c1f1b9
+  Value:               0 ETH
+  Gas used:            73730 of 6000000
+  Block #62:           0x28407eadc3a17e292014a6ec97469b05c3ff4f367587dfd5a49ce278f127e8e3
+
+  Error: reverted with reason string 'Address: call to non-contract'
+
+[32meth_getBlockByNumber[0m
+[32meth_maxPriorityFeePerGas[0m
+[32meth_getTransactionCount[0m
+[32meth_sendRawTransaction[0m
+  Contract call:       RaylsERC20#mint
+  Transaction:         0x0ca96893f659f87737453b92e90dcf4dabd633ab2a75ff984ae695e484d0a4dc
+  From:                0x0f1013e0e46b97144b25b3131668ef99858bd8d0
+  To:                  0xdcdb2ea6361bf78791ba202cacf96b849af73b3f
+  Value:               0 ETH
+  Gas used:            36501 of 6000000
+  Block #63:           0xa07108a4aeaeeac14174c94986d79ddac9100b6360d21930b5fbeb02d9be9e03
+
+[32meth_getTransactionReceipt[0m
+[32meth_getBlockByNumber[0m
+[32meth_maxPriorityFeePerGas[0m
+[32meth_getTransactionCount[0m
+[32meth_sendRawTransaction[0m
+  Contract call:       RaylsERC20#approve
+  Transaction:         0x267c844e8224fff838b7fec520c34e5e80b911d35cc60484f7dc995b5026d0a8
+  From:                0x0f1013e0e46b97144b25b3131668ef99858bd8d0
+  To:                  0xdcdb2ea6361bf78791ba202cacf96b849af73b3f
+  Value:               0 ETH
+  Gas used:            28881 of 6000000
+  Block #64:           0xb926298ff830520054293fe3ae27c1aa75b1ff1514cdaa413c2fbff45d75d347
+
+[32meth_getTransactionReceipt[0m
+[32meth_getBlockByNumber[0m
+[32meth_maxPriorityFeePerGas[0m
+[32meth_getTransactionCount[0m
+[31meth_sendRawTransaction[0m
+  Contract call:       Erc20CoinVault#depositV2
+  Transaction:         0x8fcc79be52648dedb1af3bde33ad7032cfd582a5480eb279e9c7ea89178738d5
+  From:                0x0f1013e0e46b97144b25b3131668ef99858bd8d0
+  To:                  0x20c856d1d33a80f574ffd67d411dbc7ce1c1f1b9
+  Value:               0 ETH
+  Gas used:            73670 of 6000000
+  Block #65:           0x6dca2b93d2b65537df4a9993b48e7db818ece0541e1bce8a3b2e442036f79dc1
+
+  Error: reverted with reason string 'Address: call to non-contract'
+
+[32meth_getBlockByNumber[0m
+[32meth_maxPriorityFeePerGas[0m
+[32meth_getTransactionCount[0m
+[32meth_sendRawTransaction[0m
+  Contract call:       RaylsERC20#mint
+  Transaction:         0x377795613b90d67bbf7809c14fe277f132d427bfdd2c44adce19f4b3e035cf42
+  From:                0x0f1013e0e46b97144b25b3131668ef99858bd8d0
+  To:                  0xdcdb2ea6361bf78791ba202cacf96b849af73b3f
+  Value:               0 ETH
+  Gas used:            36501 of 6000000
+  Block #66:           0xe2a560163c6c6a9261b20064f5bec7c30b7638fd155013f0c96297aa8896f994
+
+[32meth_getTransactionReceipt[0m
+[32meth_getBlockByNumber[0m
+[32meth_maxPriorityFeePerGas[0m
+[32meth_getTransactionCount[0m
+[32meth_sendRawTransaction[0m
+  Contract call:       RaylsERC20#approve
+  Transaction:         0x134e4a0514a784a46857d5c1392717fadcc8500e12d3cd049345d4ff0541e795
+  From:                0x0f1013e0e46b97144b25b3131668ef99858bd8d0
+  To:                  0xdcdb2ea6361bf78791ba202cacf96b849af73b3f
+  Value:               0 ETH
+  Gas used:            26081 of 6000000
+  Block #67:           0xe8c5866f3240f9c3bef16d9c0c5de61c6f50516e49de0799051e2804d973129e
+
+[32meth_getTransactionReceipt[0m
+[32meth_getBlockByNumber[0m
+[32meth_maxPriorityFeePerGas[0m
+[32meth_getTransactionCount[0m
+[31meth_sendRawTransaction[0m
+  Contract call:       Erc20CoinVault#depositV2
+  Transaction:         0xcdeb66b227236e80a8c97879d86556c5148741b341d7007d76ebeb0314c7fb3e
+  From:                0x0f1013e0e46b97144b25b3131668ef99858bd8d0
+  To:                  0x20c856d1d33a80f574ffd67d411dbc7ce1c1f1b9
+  Value:               0 ETH
+  Gas used:            73700 of 6000000
+  Block #68:           0x9d8ffd48cdd3d38560ea121e5857360d50c6e3d0274e7647db2ccc1961b65c05
+
+  Error: reverted with reason string 'Address: call to non-contract'
+
+[32meth_getBlockByNumber[0m
+[32meth_maxPriorityFeePerGas[0m
+[32meth_getTransactionCount[0m
+[32meth_sendRawTransaction[0m
+  Contract call:       RaylsERC20#mint
+  Transaction:         0x8c650689c5a3cb2fe1644ca9c470e5bd1b3e02bd9fefe2cd1251bc735f75ea9a
+  From:                0x0f1013e0e46b97144b25b3131668ef99858bd8d0
+  To:                  0xdcdb2ea6361bf78791ba202cacf96b849af73b3f
+  Value:               0 ETH
+  Gas used:            36501 of 6000000
+  Block #69:           0x398534a8953e2b9b7e43415de7b2b5d0282c193028f152df243a0c6b7c25a8b9
+
+[32meth_getTransactionReceipt[0m
+[32meth_getBlockByNumber[0m
+[32meth_maxPriorityFeePerGas[0m
+[32meth_getTransactionCount[0m
+[32meth_sendRawTransaction[0m
+  Contract call:       RaylsERC20#approve
+  Transaction:         0x1fdaf1c9774962430e62ffeddec0b92c89a81379a16bd40135fec064e45a277a
+  From:                0x0f1013e0e46b97144b25b3131668ef99858bd8d0
+  To:                  0xdcdb2ea6361bf78791ba202cacf96b849af73b3f
+  Value:               0 ETH
+  Gas used:            26081 of 6000000
+  Block #70:           0xb56eaa023156c2242049f95803a3b65abd1ca507dc6e885828af8389e3af3e1b
+
+[32meth_getTransactionReceipt[0m
+[32meth_getBlockByNumber[0m
+[32meth_maxPriorityFeePerGas[0m
+[32meth_getTransactionCount[0m
+[31meth_sendRawTransaction[0m
+  Contract call:       Erc20CoinVault#depositV2
+  Transaction:         0xf890806c0a7bfeed2e0c4a6049eb6904354cb08575822e182bdc4ca46b06db41
+  From:                0x0f1013e0e46b97144b25b3131668ef99858bd8d0
+  To:                  0x20c856d1d33a80f574ffd67d411dbc7ce1c1f1b9
+  Value:               0 ETH
+  Gas used:            73580 of 6000000
+  Block #71:           0x4c40e4b94282b894756829896dada2469cfd134e8f923401224c3e4ae4a8a850
+
+  Error: reverted with reason string 'Address: call to non-contract'
+
+[32meth_getBlockByNumber[0m
+[32meth_maxPriorityFeePerGas[0m
+[32meth_getTransactionCount[0m
+[32meth_sendRawTransaction[0m
+  Contract call:       RaylsERC20#mint
+  Transaction:         0x027cec602be98d7dbbdabac23dd9f0b079d946ea65f4f757b77ee1a729bd2c49
+  From:                0x0f1013e0e46b97144b25b3131668ef99858bd8d0
+  To:                  0xdcdb2ea6361bf78791ba202cacf96b849af73b3f
+  Value:               0 ETH
+  Gas used:            36489 of 6000000
+  Block #72:           0x43b97fd33d7b00ea72cad21e7f3e3a16032a456c187274aeeca0f3132267c221
+
+[32meth_getTransactionReceipt[0m
+[32meth_getBlockByNumber[0m
+[32meth_maxPriorityFeePerGas[0m
+[32meth_getTransactionCount[0m
+[32meth_sendRawTransaction[0m
+  Contract call:       RaylsERC20#approve
+  Transaction:         0xc2b30897b1e6f58c8d1a1eb59546ba82b65145fe19d72412a0938c4f43e2e2b2
+  From:                0x0f1013e0e46b97144b25b3131668ef99858bd8d0
+  To:                  0xdcdb2ea6361bf78791ba202cacf96b849af73b3f
+  Value:               0 ETH
+  Gas used:            28881 of 6000000
+  Block #73:           0xd00d925cbe3aa74c519de97b33bb90eea1db13ea46f4f8a189269592b9a9b919
+
+[32meth_getTransactionReceipt[0m
+[32meth_getBlockByNumber[0m
+[32meth_maxPriorityFeePerGas[0m
+[32meth_getTransactionCount[0m
+[31meth_sendRawTransaction[0m
+  Contract call:       Erc20CoinVault#depositV2
+  Transaction:         0x0a96f5e737d26aaa9dd4ce5cd559a7a5dc9ca48398b54d9609a8ebae6d3602b2
+  From:                0x0f1013e0e46b97144b25b3131668ef99858bd8d0
+  To:                  0x20c856d1d33a80f574ffd67d411dbc7ce1c1f1b9
+  Value:               0 ETH
+  Gas used:            73640 of 6000000
+  Block #74:           0x2e7ed12f621bce6cca0f54e7e7a566a4b443ff1673bf601111392577f1d13f5f
+
+  Error: reverted with reason string 'Address: call to non-contract'
+
+[32meth_getBlockByNumber[0m
+[32meth_maxPriorityFeePerGas[0m
+[32meth_getTransactionCount[0m
+[32meth_sendRawTransaction[0m
+  Contract call:       RaylsERC20#mint
+  Transaction:         0xb700b29f3221b490995bba799884304649308039169ce9c75cbc533fd2e8c6df
+  From:                0x0f1013e0e46b97144b25b3131668ef99858bd8d0
+  To:                  0xdcdb2ea6361bf78791ba202cacf96b849af73b3f
+  Value:               0 ETH
+  Gas used:            36489 of 6000000
+  Block #75:           0x9f7d97457966d39eaab9fc4f3f2a6f4c49e07f0e855efdc0af7bd677ebd6ae11
+
+[32meth_getTransactionReceipt[0m
+[32meth_getBlockByNumber[0m
+[32meth_maxPriorityFeePerGas[0m
+[32meth_getTransactionCount[0m
+[32meth_sendRawTransaction[0m
+  Contract call:       RaylsERC20#approve
+  Transaction:         0x437ffb9516acd2703f4eaabbd2a361f5dcf1a51e3469276db93c98534247f057
+  From:                0x0f1013e0e46b97144b25b3131668ef99858bd8d0
+  To:                  0xdcdb2ea6361bf78791ba202cacf96b849af73b3f
+  Value:               0 ETH
+  Gas used:            26081 of 6000000
+  Block #76:           0x2d9e0fd622913051a50e34f6b230cc7eed9aca945794234198b81bdd83610461
+
+[32meth_getTransactionReceipt[0m
+[32meth_getBlockByNumber[0m
+[32meth_maxPriorityFeePerGas[0m
+[32meth_getTransactionCount[0m
+[31meth_sendRawTransaction[0m
+  Contract call:       Erc20CoinVault#depositV2
+  Transaction:         0x099a4f8c9a8ae4ae2267f8ee51228a48b64ed0989abd67d9293964eba3bbf61a
+  From:                0x0f1013e0e46b97144b25b3131668ef99858bd8d0
+  To:                  0x20c856d1d33a80f574ffd67d411dbc7ce1c1f1b9
+  Value:               0 ETH
+  Gas used:            73550 of 6000000
+  Block #77:           0xd27c1a42f103d9f5759f9cd4d74aa0ee925d300e147ae81608a91db0a32f0a49
+
+  Error: reverted with reason string 'Address: call to non-contract'
+
+[32meth_getBlockByNumber[0m
+[32meth_maxPriorityFeePerGas[0m
+[32meth_getTransactionCount[0m
+[32meth_sendRawTransaction[0m
+  Contract call:       RaylsERC20#mint
+  Transaction:         0x50c50a597e5447b1353f100f8004022326e8147461f36c99e4359bfb77c1132d
+  From:                0x0f1013e0e46b97144b25b3131668ef99858bd8d0
+  To:                  0xdcdb2ea6361bf78791ba202cacf96b849af73b3f
+  Value:               0 ETH
+  Gas used:            36489 of 6000000
+  Block #78:           0x0fdc36e5d83843af8a190041d8aaf20e8084a9f12b84d889bdf3b1341b6cd357
+
+[32meth_getTransactionReceipt[0m
+[32meth_getBlockByNumber[0m
+[32meth_maxPriorityFeePerGas[0m
+[32meth_getTransactionCount[0m
+[32meth_sendRawTransaction[0m
+  Contract call:       RaylsERC20#approve
+  Transaction:         0xc4e6afa7d530c85d632739a6452e70a4bd8b8e66c66aebe04c38677e0cf2b2e8
+  From:                0x0f1013e0e46b97144b25b3131668ef99858bd8d0
+  To:                  0xdcdb2ea6361bf78791ba202cacf96b849af73b3f
+  Value:               0 ETH
+  Gas used:            26081 of 6000000
+  Block #79:           0xfb2a25d936bd49a1f458430c8026b9ba4e5057744529336dafbb1e286d5e948f
+
+[32meth_getTransactionReceipt[0m
+[32meth_getBlockByNumber[0m
+[32meth_maxPriorityFeePerGas[0m
+[32meth_getTransactionCount[0m
+[31meth_sendRawTransaction[0m
+  Contract call:       Erc20CoinVault#depositV2
+  Transaction:         0x3bfd1f05007e34d0db3936d4216f87e09dd6765a632d571d6d090630755a1438
+  From:                0x0f1013e0e46b97144b25b3131668ef99858bd8d0
+  To:                  0x20c856d1d33a80f574ffd67d411dbc7ce1c1f1b9
+  Value:               0 ETH
+  Gas used:            73550 of 6000000
+  Block #80:           0xe254019b4e305f87bd14e82da6a2988916322ea6110b65c127192b17d034e8fa
+
+  Error: reverted with reason string 'Address: call to non-contract'
+
+[32meth_getBlockByNumber[0m
+[32meth_maxPriorityFeePerGas[0m
+[32meth_getTransactionCount[0m
+[32meth_sendRawTransaction[0m
+  Contract deployment: Erc20CoinVault
+  Contract address:    0x05d624560cc0733af0d38b0754b37361191482ab
+  Transaction:         0x14c19e2ab089f2909da1c077836445da25df1dab345aa680620d69ded3757780
+  From:                0x0f1013e0e46b97144b25b3131668ef99858bd8d0
+  Value:               0 ETH
+  Gas used:            3817620 of 6000000
+  Block #81:           0x6c32e79392b1db853c089030f294f54ddb5f4b7d510aeff8756662d91b18ce55
+
+[32meth_getTransactionReceipt[0m
+[32meth_getBlockByNumber[0m
+[32meth_maxPriorityFeePerGas[0m
+[32meth_getTransactionCount[0m
+[32meth_sendRawTransaction[0m
+  Contract call:       EnygmaDvp#registerVault
+  Transaction:         0x0da4842a52d6d6c7bb08f02673655988bad67ec7d5314b6c49cf8d586b72466c
+  From:                0x0f1013e0e46b97144b25b3131668ef99858bd8d0
+  To:                  0x6b01819c927b66eb1ed17a276fc60359b502d3de
+  Value:               0 ETH
+  Gas used:            865213 of 6000000
+  Block #82:           0x8b310a1743c37174b7d876a28d7e99bd9c7d677a1e2a4ab9c38f8af9ce655c4b
+
+[32meth_getTransactionReceipt[0m
+[32meth_call[0m
+  Contract call:       EnygmaDvp#vaultById
+  From:                0x0000000000000000000000000000000000000000
+  To:                  0x6b01819c927b66eb1ed17a276fc60359b502d3de
+
+[32meth_getBlockByNumber[0m
+[32meth_maxPriorityFeePerGas[0m
+[32meth_getTransactionCount[0m
+[31meth_sendRawTransaction[0m
+  Contract call:       EnygmaDvp#addVaultToGroup
+  Transaction:         0xcd552fb2d45e221cde253a57ed310ab263b436e7eb7f9ffb617f41266bc5a44e
+  From:                0x0f1013e0e46b97144b25b3131668ef99858bd8d0
+  To:                  0x6b01819c927b66eb1ed17a276fc60359b502d3de
+  Value:               0 ETH
+  Gas used:            31769 of 6000000
+  Block #83:           0x89c26a9d64c446c12f54ce47781dd31baf59e38a637904250f26cd9440818e5d
+
+  Error: Transaction reverted without a reason
+
+[32meth_accounts[0m
+[32meth_call[0m
+  Contract call:       EnygmaDvp#vaultById
+  From:                0x0f1013e0e46b97144b25b3131668ef99858bd8d0
+  To:                  0x6b01819c927b66eb1ed17a276fc60359b502d3de
+
+[32meth_call[0m
+  Contract call:       EnygmaDvp#vaultById
+  From:                0x0f1013e0e46b97144b25b3131668ef99858bd8d0
+  To:                  0x6b01819c927b66eb1ed17a276fc60359b502d3de
+
+[32meth_call[0m
+  Contract call:       EnygmaDvp#vaultById
+  From:                0x0f1013e0e46b97144b25b3131668ef99858bd8d0
+  To:                  0x6b01819c927b66eb1ed17a276fc60359b502d3de
+
+[32meth_call[0m
+  Contract call:       EnygmaDvp#vaultById
+  From:                0x0f1013e0e46b97144b25b3131668ef99858bd8d0
+  To:                  0x6b01819c927b66eb1ed17a276fc60359b502d3de
+
+[32meth_call[0m
+  Contract call:       Erc20CoinVault#currentRoot
+  From:                0x0f1013e0e46b97144b25b3131668ef99858bd8d0
+  To:                  0x20c856d1d33a80f574ffd67d411dbc7ce1c1f1b9
+
+[32meth_call[0m
+  Contract call:       Erc20CoinVault#treeNumber
+  From:                0x0f1013e0e46b97144b25b3131668ef99858bd8d0
+  To:                  0x20c856d1d33a80f574ffd67d411dbc7ce1c1f1b9
+
+[32meth_getLogs[0m
+[32meth_call[0m
+  Contract call:       Erc721CoinVault#currentRoot
+  From:                0x0f1013e0e46b97144b25b3131668ef99858bd8d0
+  To:                  0xffe06f757d59b276bc4bece9e26cb2de1e8a2198
+
+[32meth_call[0m
+  Contract call:       Erc721CoinVault#treeNumber
+  From:                0x0f1013e0e46b97144b25b3131668ef99858bd8d0
+  To:                  0xffe06f757d59b276bc4bece9e26cb2de1e8a2198
+
+[32meth_getLogs[0m
+[32meth_call[0m
+  Contract call:       Erc1155CoinVault#currentRoot
+  From:                0x0f1013e0e46b97144b25b3131668ef99858bd8d0
+  To:                  0xac7d522918a535f15fb47c08ea66f7ae1bfea648
+
+[32meth_call[0m
+  Contract call:       Erc1155CoinVault#treeNumber
+  From:                0x0f1013e0e46b97144b25b3131668ef99858bd8d0
+  To:                  0xac7d522918a535f15fb47c08ea66f7ae1bfea648
+
+[32meth_getLogs[0m
+[32meth_call[0m
+  Contract call:       EnygmaErc20CoinVault#currentRoot
+  From:                0x0f1013e0e46b97144b25b3131668ef99858bd8d0
+  To:                  0x594dbfa06ed274555ef7e8cbc99df33bfbdaa2af
+
+[32meth_call[0m
+  Contract call:       EnygmaErc20CoinVault#treeNumber
+  From:                0x0f1013e0e46b97144b25b3131668ef99858bd8d0
+  To:                  0x594dbfa06ed274555ef7e8cbc99df33bfbdaa2af
+
+[32meth_getLogs[0m

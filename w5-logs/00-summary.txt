@@ -1,0 +1,57 @@
+started  2026-10-26 08:54:58 UTC
+repo     https://github.com/smolderar/Enygma
+commit   135637a968116d7a88a973500bca84506877b5c1
+machine  2 cores, 7 GB RAM, Linux 6.8.0-1064-azure
+go       go version go1.27.1 linux/amd64
+node     v24.21.0, npm 11.19.0
+solc     Version: 0.8.24+commit.e11b9ed9.Linux.g++
+clang    Ubuntu clang version 18.1.3 (1ubuntu1)
+PASS  01-npm-install
+PASS  02-hardhat-compile
+PASS  03-hardhat-node
+PASS  04-regen-poseidon
+PASS  05-build-deploy
+PASS  06-deploy
+PASS  07-export-vk
+PASS  08-build-init
+FAIL  09-init (see w5-logs/09-init.log)
+PASS  10-build-gnark-server
+PASS  11-gnark-server
+=== RUN   TestV2Erc20OnChain_PrivateMint
+--- FAIL: TestV2Erc20OnChain_PrivateMint (0.06s)
+=== RUN   TestV2DvP
+--- FAIL: TestV2DvP (0.08s)
+=== RUN   TestV2DvP_WithDeadline
+=== RUN   TestV2DvP_WithDeadline/FullSwap
+=== RUN   TestV2DvP_WithDeadline/DeadlineExpired
+=== RUN   TestV2DvP_WithDeadline/InvalidProof
+--- FAIL: TestV2DvP_WithDeadline (0.13s)
+=== RUN   TestV2DvP_FrontRun
+=== RUN   TestV2DvP_FrontRun/HijackInitiator
+=== RUN   TestV2DvP_FrontRun/AttackerCannotRedirect
+=== RUN   TestV2DvP_FrontRun/OverwritePending
+=== RUN   TestV2DvP_FrontRun/AnyoneCanFinishLeg2
+=== RUN   TestV2DvP_FrontRun/FarFutureDeadline
+--- FAIL: TestV2DvP_FrontRun (0.38s)
+=== RUN   TestV2DvP_StandaloneInitiatorLeg
+--- FAIL: TestV2DvP_StandaloneInitiatorLeg (0.09s)
+=== RUN   TestV2DvP_StandaloneDeliveryLeg
+--- FAIL: TestV2DvP_StandaloneDeliveryLeg (0.05s)
+=== RUN   TestV2DvP_DirectClosedSwap
+=== RUN   TestV2DvP_DirectClosedSwap/exchange:_late_leg_after_timeout_is_rejected
+=== RUN   TestV2DvP_DirectClosedSwap/exchange:_normal_settlement_still_works
+=== RUN   TestV2DvP_DirectClosedSwap/dvp:_late_destination_leg_after_timeout_is_rejected
+=== RUN   TestV2DvP_DirectClosedSwap/dvp:_destination_leg_before_the_initiator_leg
+=== RUN   TestV2DvP_DirectClosedSwap/claimSwapTimeout_on_a_closed_swap
+--- FAIL: TestV2DvP_DirectClosedSwap (0.15s)
+=== RUN   TestV2DvP_CounterVaultBinding
+=== RUN   TestV2DvP_CounterVaultBinding/Alice_expected_another_vault
+=== RUN   TestV2DvP_CounterVaultBinding/Bob_expected_another_vault
+=== RUN   TestV2DvP_CounterVaultBinding/matching_vaults_settle
+--- FAIL: TestV2DvP_CounterVaultBinding (0.10s)
+=== RUN   TestV2DvP_SwapKeyCannotBeOverwrittenOrReopened
+--- FAIL: TestV2DvP_SwapKeyCannotBeOverwrittenOrReopened (0.67s)
+FAIL
+FAIL	enygma_dvp/test	1.757s
+merkle   {"enygmaDvpRegistryCheck": {"enygmaDvpAddress": "0x6b01819C927b66eB1ED17a276fC60359B502d3De", "allMatch": false, "entries": [{"vaultId": 0, "name": "Erc20CoinVault", "addressInDvP": "0x05d624560cc0733af0d38b0754b37361191482ab", "addressInReceipts": "0x20c856d1d33a80f574ffd67d411dbc7ce1c1f1b9", "match": false}, {"vaultId": 1, "name": "Erc721CoinVault", "addressInDvP": "0x0000000000000000000000000000000000000000", "addressInReceipts": "0xffe06f757d59b276bc4bece9e26cb2de1e8a2198", "match": false}, {"vaultId": 2, "name": "Erc1155CoinVault", "addressInDvP": "0x00000000000000000000000000000000000000
+finished 2026-10-26 09:02:48 UTC

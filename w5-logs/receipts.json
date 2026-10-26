@@ -1,0 +1,92 @@
+{
+  "ERC1155": {
+    "contractAddress": "0x06eA154c5942447603397483566646CA3565d11E",
+    "transactionHash": "0xddb56dcec4b21b1a571f89e070d7e2d6d7fa5af06dda396a88017e8977b25dd2",
+    "blockNumber": 10,
+    "gasUsed": 2982160
+  },
+  "ERC20": {
+    "contractAddress": "0xDCDB2EA6361Bf78791ba202cAcf96B849aF73B3F",
+    "transactionHash": "0xe3d0dc784c6f89f466654feceab589f58e9dd16fc6bc891938e43fd5cd766c34",
+    "blockNumber": 8,
+    "gasUsed": 1124821
+  },
+  "ERC721": {
+    "contractAddress": "0xa34b0bB5F2d8C1674eB7cF53e06B813A31C5509C",
+    "transactionHash": "0x8e6e519f81cb166a3a97e730003ded213ebe27a43f946e8378ad9520a0f6e7ef",
+    "blockNumber": 9,
+    "gasUsed": 1453584
+  },
+  "EnygmaDvp": {
+    "contractAddress": "0x6b01819C927b66eB1ED17a276fC60359B502d3De",
+    "transactionHash": "0x02ec0264ee1834787098edc3d6650c5969c501ace9550bde3c465ec04080d7d6",
+    "blockNumber": 7,
+    "gasUsed": 9580649
+  },
+  "EnygmaErc20CoinVault": {
+    "contractAddress": "0x594dbfA06ED274555ef7E8cBc99df33BfBDaA2AF",
+    "transactionHash": "0x85942cb3d4bb3286c48b9b94a64a6bab6a7df33d3562c1cc4078f60b32dee1ce",
+    "blockNumber": 14,
+    "gasUsed": 2834252
+  },
+  "Erc1155CoinVault": {
+    "contractAddress": "0xac7D522918A535f15fb47C08eA66F7aE1BFEa648",
+    "transactionHash": "0x53a5e5196321f8876ef17a63ae3f4cbfeadd16dd6320ba2d88d7562b8c60deb2",
+    "blockNumber": 13,
+    "gasUsed": 3701357
+  },
+  "Erc20CoinVault": {
+    "contractAddress": "0x20C856d1D33A80F574Ffd67D411dbC7CE1C1F1b9",
+    "transactionHash": "0x237c8827e5038e0722a14886723f269527ef9338c4330c6e9980d9ffbbbf50c3",
+    "blockNumber": 11,
+    "gasUsed": 3817620
+  },
+  "Erc721CoinVault": {
+    "contractAddress": "0xFfE06F757D59b276BC4bece9E26CB2DE1E8a2198",
+    "transactionHash": "0x5245ce8af849634fee2f02023a27f26a4c4ec05bb9847a2469406351d03188a9",
+    "blockNumber": 12,
+    "gasUsed": 3008492
+  },
+  "FungibleAssetGroup": {
+    "contractAddress": "0xd908BaeE382191D15E479589D9661A9E9b55b827",
+    "transactionHash": "0x30c6e8de0ec51b84145aac10c19d5da9a884c77193a0d5ab97e7e3917a11a751",
+    "blockNumber": 15,
+    "gasUsed": 1668620
+  },
+  "G16Verifier": {
+    "contractAddress": "0x006cEB75982dFc07A99cF6674A60573257E8F07d",
+    "transactionHash": "0x9909d84aeba3c7830ae5dfc2408c3e90b9b4d78938dbfa5756f926eec2ab5f06",
+    "blockNumber": 2,
+    "gasUsed": 909477
+  },
+  "NonFungibleAssetGroup": {
+    "contractAddress": "0x4d5509f0D2d27A41ab31a8212928134034615177",
+    "transactionHash": "0xe8264f5612d5f7564b63f7f56fe3894f71f19526fcd3876e7555da5948525301",
+    "blockNumber": 16,
+    "gasUsed": 1668620
+  },
+  "Poseidon": {
+    "contractAddress": "0x32B025d7f97fC9A9BDB4B57BB233Daf1D8bd6b82",
+    "transactionHash": "0xe6726133243dc5807da64687b52f5aa3dd5d547c29b995b5f9fb01ffb944ad17",
+    "blockNumber": 1,
+    "gasUsed": 2157126
+  },
+  "PoseidonWrapper": {
+    "contractAddress": "0x1959D67B2d378C8E62750e0025e2b4cd988ab0C7",
+    "transactionHash": "0x700ce61065e9960edd9772ac7fad6573c3d6799470259a0a8a48c00323f17d55",
+    "blockNumber": 6,
+    "gasUsed": 210064
+  },
+  "PrivateMintVerifier": {
+    "contractAddress": "0x941491477400d6169290d8A8e38854dF892Acc73",
+    "transactionHash": "0xc3c300e2fbd47ce3ea6f37dab0f6a8e1eee852905ffaea662b50b0877f1eae86",
+    "blockNumber": 4,
+    "gasUsed": 1002086
+  },
+  "Verifier": {
+    "contractAddress": "0xadF42E56D77AbbbE9f77A1aA95cf3827A7B78808",
+    "transactionHash": "0x9333f93a1c1d702bab76afa325daa138db921c070e31cb2831c55bfa6bdeee8d",
+    "blockNumber": 3,
+    "gasUsed": 1127013
+  }
+}
