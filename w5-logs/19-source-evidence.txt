@@ -1,0 +1,61 @@
+## claimSwapTimeout (EnygmaDvp.sol)
+    function claimSwapTimeout(uint256 pendingReceiptId) public nonReentrant returns (bool) {
+        TransactionMetadata storage meta = _pendingTransactions[pendingReceiptId];
+
+        if (meta.deadline == 0) {
+            revert SwapNotFound();
+        }
+        if (block.timestamp <= meta.deadline) {
+            revert SwapNotExpiredYet();
+        }
+        uint256 vaultId       = meta.vaultId;
+        uint256 revertCommitA = meta.revertCommitA;
+
+        // Look up the vault receipt using commitB (Alice's receiptUniqueId).
+        ProofReceipt memory receipt = IAbstractCoinVault(_coinVaults[vaultId])
+            .getPendingProofReceipt(meta.commitB);
+
+        // CRIT-2 fix: nullify Alice's input (mark as permanently spent)
+        // then insert revertCommitA so Alice can reclaim her asset.
+        // The nullifiers were locked by addPendingProofReceipt; unlock first so nullifyFromReceipt succeeds.
+        IAbstractCoinVault(_coinVaults[vaultId]).unlockFromReceipt(receipt);
+        IAbstractCoinVault(_coinVaults[vaultId]).nullifyFromReceipt(receipt);
+        uint256[] memory revertCommits = new uint256[](1);
+        revertCommits[0] = revertCommitA;
+        IAbstractCoinVault(_coinVaults[vaultId]).registerCoins(revertCommits);
+
+        delete _pendingTransactions[pendingReceiptId];
+        _closedSwaps[pendingReceiptId] = true;
+
+        emit SwapTimedOut(pendingReceiptId);
+        return true;
+    }
+
+## SwapRelayer.cancelSwap (the relayer route unlocks instead)
+    function cancelSwap(bytes32 swapId) external nonReentrant {
+        PendingSwap storage s = swaps[swapId];
+
+        if (block.timestamp < s.expiry) revert SwapNotExpiredYet();
+        if (!s.paymentSubmitted && !s.deliverySubmitted) revert NothingToCancel();
+        if (s.paymentSubmitted && s.deliverySubmitted) revert BothSidesAlreadyIn();
+
+        if (s.paymentSubmitted) {
+            dvp.unlockReceiptNullifiers(s.paymentReceipt, s.paymentVaultId);
+            _close(s.paymentReceipt);
+        } else {
+            dvp.unlockReceiptNullifiers(s.deliveryReceipt, s.deliveryVaultId);
+            _close(s.deliveryReceipt);
+        }
+
+        delete swaps[swapId];
+        emit SwapCancelled(swapId);
+    }
+
+## Deadline in the docs vs the contract
+51:    Alice->>DVP: submitPartialSettlement(receipt_A, deadline=now+60s)
+78:    Alice->>DVP: submitPartialSettlement(receipt_A, deadline=now+60s)
+110:    Alice->>DVP: submitPartialSettlement(receipt_A, deadline=now+60s)
+62:    uint256 public constant MIN_SWAP_DURATION = 15 minutes;
+
+## The comment in 04_v2_dvp_deadline_test.go
+701:		// Now that nf_A is unlocked, Alice can spend her original note

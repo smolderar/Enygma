@@ -1,0 +1,7 @@
+## Files changed against upstream main (tracked), excluding w5-logs/ and run scripts
+ .../core/contracts/PrivateMintVerifier.sol         | 48 +++++++++++-----------
+ 1 file changed, 24 insertions(+), 24 deletions(-)
+(PrivateMintVerifier.sol is rewritten by the repo's own setup step: gnark_circuits/cmd/patch_verifier, step 05)
+## Working tree status for test/, src/, contracts/ (M = modified, ?? = new file)
+ M enygma_dvp/contracts/core/contracts/PrivateMintVerifier.sol
+?? enygma_dvp/test/90_w5_timeout_refund_test.go

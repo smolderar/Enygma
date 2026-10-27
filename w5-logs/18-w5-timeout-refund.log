@@ -1,0 +1,47 @@
+=== RUN   TestW5_TimeoutRefund
+=== RUN   TestW5_TimeoutRefund/RefundAfterTimeout
+    [W5] accounts: account[0] 0x0F1013e0e46B97144b25b3131668EF99858BD8D0 | stranger 0xc292978f57cF5b82E6C18dd342B3d54b989687D2
+    90_w5_timeout_refund_test.go:403: Alice deposited 50 USDT — commitment: 21023189158736415004828609690961933202563593225123290137627261460148853115912
+    90_w5_timeout_refund_test.go:403: Bob deposited ticket tokenId=1152168510 — commitment: 11186908742573102344702116350826336902965577617928777782070714574218676531690
+    90_w5_timeout_refund_test.go:403: loadVaultMerkleTree: loaded 48 commitment leaves from vault 0x20C856d1D33A80F574Ffd67D411dbC7CE1C1F1b9
+    90_w5_timeout_refund_test.go:403: loadVaultMerkleTree: loaded 24 commitment leaves from vault 0xFfE06F757D59b276BC4bece9E26CB2DE1E8a2198
+    [W5] == Alice swaps 50 tokens for Bob's NFT. Bob will never deliver.
+    [W5]    Alice's note 210231...5912 (deposited by a public ERC20 transfer into the vault)
+2026/10/27 21:46:47 Response from /proof/dvpInitiator: {"proof":[18394970254820568597418094466795322312237776032668170248263528158799835366998,12569539422190639268751508091578680172027720390881628428682556455450719513929,19907629860071596994376199413235530779257618981216833019971641654695264447911,9460943879244488041386373478812628873188342718166873170518577190532843400182,1338020767199908518979032127730067141664644525614823120020625730945215120745,13976378429667313212540558561164481006843579591701273202635800279939095113786,17450624875479931883872207787513997699055520190331308440202404200946361242643,15700878739457505716246677164097391699437180180575776593135502878305882640391],"publicSignal":[13116474388893100079833700175430166109555157240722066079701898450996497046975,0,6920183885520851671362619519596533772374454228650617904540869848229000726087,2556750296487895606482007752935475584963433437025920794442605126082532080235,8937032870122323059420630160001342990342294027547417505811987734473972563734,13116474388893100079833700175430166109555157240722066079701898450996497046975,13523023432231455970841255422399459946435885760916259068400162187254600458710,1460797722927944526969965370727455426823456432536]}
+    [W5]    refund note Alice would get back on a timeout (revertCommitA): 135230...8710
+    [W5] STEP 1  deadline now+60 s, as in docs/flows/04_dvp_deadline.md -> refused: SwapDeadlineTooSoon
+    [W5] STEP 2  Alice opens the swap, deadline now+960 s (submitPartialSettlement)
+    [W5]   [observer] tx 0x55173d0bff... | block 275 | from account[0] (deposits and submits Alice's leg) | to EnygmaDvp | gas 1,006,642
+    [W5]   [observer]    Erc20CoinVault.CoinLocked  assetId=0  treeNumber=0  nullifier=255675...0235
+    [W5]   [observer]    EnygmaDvp.SwapInitiated  swapId=893703...3734  commitA=131164...6975  commitB=893703...3734  deadline=1793146745
+    [W5]   [observer]    EnygmaDvp.PendingProofAddedToVault  vaultId=0  groupId=0  targetReceiptId=131164...6975  pendingProof=(672 bytes: proof and public statement)
+    [W5]         her note: locked=true spent=false
+    [W5] STEP 3  stranger calls claimSwapTimeout before the deadline -> refused: SwapNotExpiredYet
+    [W5] STEP 4  Bob never delivers. Moving the chain clock forward 965 s
+    90_w5_timeout_refund_test.go:457: Hardhat time advanced by 965s and a new block mined
+    [W5] STEP 5  stranger calls claimSwapTimeout after the deadline -> accepted
+    [W5]   [observer] tx 0xd7ca2034a6... | block 277 | from stranger (fresh key: not Alice, not Bob) | to EnygmaDvp | gas 517,610
+    [W5]   [observer]    Erc20CoinVault.CoinUnlocked  assetId=0  treeNumber=0  nullifier=255675...0235
+    [W5]   [observer]    Erc20CoinVault.CoinUnlocked  assetId=0  treeNumber=0  nullifier=255675...0235
+    [W5]   [observer]    Erc20CoinVault.Nullifier  vaultId=0  treeNumber=0  nullifier=255675...0235
+    [W5]   [observer]    Erc20CoinVault.Commitment  vaultId=0  commitment=135230...8710
+    [W5]   [observer]    EnygmaDvp.SwapTimedOut  pendingReceiptId=893703...3734
+    [W5]         original note: locked=false spent=true | refund is a NEW note 135230...8710
+    90_w5_timeout_refund_test.go:485: loadVaultMerkleTree: loaded 49 commitment leaves from vault 0x20C856d1D33A80F574Ffd67D411dbC7CE1C1F1b9
+    [W5] STEP 6  Alice withdraws the refund note to a fresh address (withdrawV2)
+    [W5]   [observer] tx 0x901f603b7f... | block 278 | from account[0] (deposits and submits Alice's leg) | to Erc20CoinVault | gas 863,832
+    [W5]   [observer]    Erc20CoinVault.Nullifier  vaultId=0  treeNumber=0  nullifier=195563...1236
+    [W5]   [observer]    Erc20CoinVault.Commitment  vaultId=0  commitment=803161...9327
+    [W5]   [observer]    Erc20CoinVault.PartialWithdrawal  vaultId=0  recipient=Alice's withdrawal address (fresh)  changeCommitment=803161...9327  amount=50
+    [W5]   [observer]    ERC20 token.Transfer  from=Erc20CoinVault  to=Alice's withdrawal address (fresh)  value=50
+    [W5]         recipient balance +50 | vault balance -50
+    90_w5_timeout_refund_test.go:498: loadVaultMerkleTree: loaded 50 commitment leaves from vault 0x20C856d1D33A80F574Ffd67D411dbC7CE1C1F1b9
+    [W5] STEP 7  withdraw the refund note a second time -> InvalidNullifier
+    90_w5_timeout_refund_test.go:506: loadVaultMerkleTree: loaded 50 commitment leaves from vault 0x20C856d1D33A80F574Ffd67D411dbC7CE1C1F1b9
+    [W5]         withdraw the ORIGINAL note -> InvalidNullifier
+    [W5]         ERC20 vault: 1015 before this run's deposit, 1015 now
+    [W5] W5-RESULT: stranger timed out the swap, refund note withdrawn, recipient +50, refund and original both refused afterwards
+--- PASS: TestW5_TimeoutRefund (4.93s)
+    --- PASS: TestW5_TimeoutRefund/RefundAfterTimeout (4.93s)
+PASS
+ok  	enygma_dvp/test	4.971s
