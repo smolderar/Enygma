@@ -1,6 +1,6 @@
 # Enygma DvP: what happens to your tokens if the other side never delivers?
 
-An independent check of Rayls' public Enygma repository ([raylsnetwork/Enygma](https://github.com/raylsnetwork/Enygma), commit `135637a`, folder `enygma_dvp`) on a local Hardhat chain. No real money, no wallet, no live network.
+An independent check of Rayls' public Enygma repository ([raylsnetwork/Enygma](https://github.com/raylsnetwork/Enygma), commit `3dd403e`, folder `enygma_dvp`) on a local Hardhat chain. No real money, no wallet, no live network.
 
 ## What was run
 

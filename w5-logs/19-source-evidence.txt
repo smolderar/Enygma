@@ -56,6 +56,3 @@
 78:    Alice->>DVP: submitPartialSettlement(receipt_A, deadline=now+60s)
 110:    Alice->>DVP: submitPartialSettlement(receipt_A, deadline=now+60s)
 62:    uint256 public constant MIN_SWAP_DURATION = 15 minutes;
-
-## The comment in 04_v2_dvp_deadline_test.go
-701:		// Now that nf_A is unlocked, Alice can spend her original note

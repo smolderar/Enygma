@@ -25,7 +25,14 @@ say "Week 5 final run started"
 note "started  $(date -u '+%Y-%m-%d %H:%M:%S') UTC"
 note "where    ${GITHUB_ACTIONS:+GitHub Actions runner}${CODESPACES:+GitHub Codespace}"
 note "repo     $(git -C "$ROOT" remote get-url origin 2>/dev/null)"
-note "upstream raylsnetwork/Enygma main $(git -C "$ROOT" rev-parse origin/main 2>/dev/null)"
+# Test Rayls' latest public code: merge raylsnetwork/Enygma main into this branch (no-op if already in).
+git -C "$ROOT" config user.name "Smolder AR"; git -C "$ROOT" config user.email "smolderar@users.noreply.github.com"
+if git -C "$ROOT" fetch -q https://github.com/raylsnetwork/Enygma main:refs/remotes/upstream/main 2>/dev/null; then
+  if git -C "$ROOT" merge -q --no-edit upstream/main >/dev/null 2>&1; then note "PASS  00-sync (this branch includes Rayls' latest main)"
+  else git -C "$ROOT" merge --abort >/dev/null 2>&1; note "FAIL  00-sync (could not merge Rayls' latest main)"; fi
+fi
+UP="$(git -C "$ROOT" rev-parse upstream/main 2>/dev/null)"
+note "upstream raylsnetwork/Enygma main $UP"
 note "machine  $(nproc) cores, $(free -g | awk '/Mem:/{print $2}') GB RAM, $(uname -sr)"
 
 # ---------- tools ----------
@@ -49,11 +56,13 @@ if ls gnark_circuits/scripts/keys/DvPInitiatorPK.key >/dev/null 2>&1; then note 
 else step 02-keygen bash -c 'cd gnark_circuits && mkdir -p scripts/keys scripts/verifier && go run ./cmd/keygen'; fi
 
 # ---------- 2. fresh local chain, compile, patch, deploy ----------
-say "03-hardhat-node (fresh local chain on 127.0.0.1:8545)"
+# Compile first: the Hardhat node reads the compiled artifacts when it starts, and only then can it
+# name a contract's custom errors (SwapDeadlineTooSoon, InvalidNullifier, ...) that the tests check.
+step 03-hardhat-compile  npx hardhat compile
+say "04-hardhat-node (fresh local chain on 127.0.0.1:8545)"
 pkill -f "hardhat node" 2>/dev/null; sleep 1
-nohup npx hardhat node > "$LOG/03-hardhat-node.log" 2>&1 &
-if wait_port 8545 90; then note "PASS  03-hardhat-node"; else note "FAIL  03-hardhat-node"; fi
-step 04-hardhat-compile  npx hardhat compile
+nohup npx hardhat node > "$LOG/04-hardhat-node.log" 2>&1 &
+if wait_port 8545 90; then note "PASS  04-hardhat-node"; else note "FAIL  04-hardhat-node"; fi
 step 05-patch-verifier   bash -c 'cd gnark_circuits && go run ./cmd/patch_verifier/'
 step 06-regen-poseidon   node scripts/regen_poseidon.js
 step 07-build-deploy     bash -c 'cd scripts && go build -o /tmp/deploy_contracts ./cmd/deploy'
@@ -120,9 +129,9 @@ package tests
 // Question: in a private DvP swap, what happens to Alice's tokens if Bob never
 // delivers?
 //
-// 04_v2_dvp_deadline_test.go stops once claimSwapTimeout succeeds and Alice's
-// original commitment is still in the Merkle tree. This file follows the
-// tokens all the way back out of the vault.
+// This file follows the tokens all the way back out of the vault, with a
+// stranger account triggering the timeout, and then checks that neither the
+// refund note nor the original note can be spent again.
 //
 //	RefundAfterTimeout  Alice opens a swap. Bob never delivers. A stranger
 //	                    account (not Alice, not Bob) calls claimSwapTimeout
@@ -654,15 +663,13 @@ say "19-source-evidence"
   echo; echo "## Deadline in the docs vs the contract"
   grep -n "now+60s" docs/flows/04_dvp_deadline.md
   grep -n "MIN_SWAP_DURATION =" contracts/core/contracts/EnygmaDvp.sol
-  echo; echo "## The comment in 04_v2_dvp_deadline_test.go"
-  grep -n "Alice can spend her original note" test/04_v2_dvp_deadline_test.go
 } > "$LOG/19-source-evidence.txt" 2>&1
 note "PASS  19-source-evidence (w5-logs/19-source-evidence.txt)"
 
 say "20-what-changed"
 {
-  echo "## Files changed against upstream main (tracked), excluding w5-logs/ and run scripts"
-  git -C "$ROOT" diff --stat origin/main -- . ':(exclude)w5-logs' ':(exclude)w5-run*.sh' 2>&1
+  echo "## Files changed against Rayls' latest main (tracked), excluding w5-logs/, the run script and the Actions workflow"
+  git -C "$ROOT" diff --stat upstream/main -- . ':(exclude)w5-logs' ':(exclude)w5-run*.sh' ':(exclude)w5-final.sh' ':(exclude).github/workflows/w5-check.yml' 2>&1
   echo "(PrivateMintVerifier.sol is rewritten by the repo's own setup step: gnark_circuits/cmd/patch_verifier, step 05)"
   echo "## Working tree status for test/, src/, contracts/ (M = modified, ?? = new file)"
   git -C "$ROOT" status --porcelain --untracked-files=normal -- enygma_dvp/test enygma_dvp/src enygma_dvp/contracts 2>&1
@@ -686,7 +693,7 @@ note "finished $(date -u '+%Y-%m-%d %H:%M:%S') UTC"
 cat > "$LOG/README.md" <<'W5README'
 # Enygma DvP: what happens to your tokens if the other side never delivers?
 
-An independent check of Rayls' public Enygma repository ([raylsnetwork/Enygma](https://github.com/raylsnetwork/Enygma), commit `135637a`, folder `enygma_dvp`) on a local Hardhat chain. No real money, no wallet, no live network.
+An independent check of Rayls' public Enygma repository ([raylsnetwork/Enygma](https://github.com/raylsnetwork/Enygma), commit `@@UP@@`, folder `enygma_dvp`) on a local Hardhat chain. No real money, no wallet, no live network.
 
 ## What was run
 
@@ -704,6 +711,7 @@ Open a Codespace on this fork, switch to branch `w5-logs` and run `bash w5-final
 
 - Local chain and a local proof server only. The proving keys are generated with the repository's own keygen because `scripts/keys/` is not in the repository, and circuits these tests do not use get a copy of the Payment verification key so `init` can run (`10-placeholder-vks.log`).
 W5README
+sed -i "s/@@UP@@/${UP:0:7}/" "$LOG/README.md"
 
 cd "$ROOT"
 if command -v zip >/dev/null; then zip -qr w5-logs.zip w5-logs; else python3 -m zipfile -c w5-logs.zip w5-logs; fi
@@ -712,8 +720,11 @@ if [ "$PUBLISH" = "1" ]; then
   say "Saving logs to GitHub (branch w5-logs)"
   git config user.name "Smolder AR"; git config user.email "smolderar@users.noreply.github.com"
   git checkout -B w5-logs >/dev/null 2>&1
+  # keep the Actions workflow that lives on the remote branch (added on GitHub), in this commit
+  git fetch -q origin w5-logs 2>/dev/null && git checkout origin/w5-logs -- .github/workflows/w5-check.yml 2>/dev/null
   cp "$0" "$ROOT/w5-final.sh" 2>/dev/null
   git add -f w5-logs w5-final.sh "$NEWTEST"
+  [ -f .github/workflows/w5-check.yml ] && git add -f .github/workflows/w5-check.yml
   git commit -m "Week 5 final run log $(date -u '+%Y-%m-%d %H:%M') UTC" >/dev/null 2>&1
   if git push -f -u origin w5-logs > /dev/null 2>&1; then echo "Logs pushed. Tell Claude: done"; else echo "Push failed. Tell Claude: push failed"; fi
 else

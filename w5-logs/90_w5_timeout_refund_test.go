@@ -7,9 +7,9 @@ package tests
 // Question: in a private DvP swap, what happens to Alice's tokens if Bob never
 // delivers?
 //
-// 04_v2_dvp_deadline_test.go stops once claimSwapTimeout succeeds and Alice's
-// original commitment is still in the Merkle tree. This file follows the
-// tokens all the way back out of the vault.
+// This file follows the tokens all the way back out of the vault, with a
+// stranger account triggering the timeout, and then checks that neither the
+// refund note nor the original note can be spent again.
 //
 //	RefundAfterTimeout  Alice opens a swap. Bob never delivers. A stranger
 //	                    account (not Alice, not Bob) calls claimSwapTimeout

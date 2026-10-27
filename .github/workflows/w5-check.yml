@@ -1,0 +1,39 @@
+# Second environment for the Week 5 check: runs w5-final.sh on a fresh GitHub-hosted runner.
+# Lives on branch w5-logs as .github/workflows/w5-check.yml. Local Hardhat chain only, nothing is pushed.
+name: w5-dvp-timeout-check
+on:
+  workflow_dispatch:
+  push:
+    branches: [w5-logs]
+permissions:
+  contents: read
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-go@v5
+        with:
+          go-version: stable
+          cache: false
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+      - name: Run the Week 5 check (local Hardhat chain only)
+        run: bash w5-final.sh
+        env:
+          W5_PUBLISH: "0"
+      - name: Show summary on the run page
+        if: always()
+        run: |
+          echo '```' >> "$GITHUB_STEP_SUMMARY"
+          cat w5-logs/00-summary.txt >> "$GITHUB_STEP_SUMMARY"
+          echo '```' >> "$GITHUB_STEP_SUMMARY"
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: w5-logs
+          path: w5-logs/
