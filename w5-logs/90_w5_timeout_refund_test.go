@@ -91,7 +91,11 @@ type w5Env struct {
 	erc20ABI abi.ABI
 	stranger *bind.TransactOpts
 	names    map[common.Address]string
+	extra    []abi.ABI // more contracts whose events observe() should name (e.g. SwapRelayer)
 }
+
+// Gas used in this run by the direct route, so the relayer test can compare.
+var w5LegGas, w5TimeoutGas uint64
 
 func newW5Env(t *testing.T) *w5Env {
 	t.Helper()
@@ -178,7 +182,7 @@ func (e *w5Env) observe(t *testing.T, label string, from common.Address, tx *typ
 			continue
 		}
 		var ev *abi.Event
-		for _, a := range []abi.ABI{e.dvpABI, e.vaultABI, e.erc20ABI} {
+		for _, a := range append([]abi.ABI{e.dvpABI, e.vaultABI, e.erc20ABI}, e.extra...) {
 			if found, err := a.EventByID(lg.Topics[0]); err == nil {
 				ev = found
 				break
@@ -209,6 +213,8 @@ func (e *w5Env) observe(t *testing.T, label string, from common.Address, tx *typ
 					var s string
 					if b, ok := vals[i].(*big.Int); ok {
 						s = w5short(b)
+					} else if raw, ok := vals[i].([]byte); ok {
+						s = fmt.Sprintf("(%d bytes)", len(raw))
 					} else {
 						s = fmt.Sprintf("%v", vals[i])
 						if len(s) > 60 {
@@ -439,6 +445,7 @@ func TestW5_TimeoutRefund(t *testing.T) {
 			t.Fatalf("Alice's leg refused: %s", why)
 		}
 		e.observe(t, fmt.Sprintf("STEP 2  Alice opens the swap, deadline now+%d s (submitPartialSettlement)", w5DeadlineSeconds), tc.auth.From, tx, r)
+		w5LegGas = r.GasUsed
 		locked, spent := e.noteState(t, tree, nf)
 		w5say("        her note: locked=%v spent=%v", locked, spent)
 		if !locked || spent {
@@ -461,6 +468,7 @@ func TestW5_TimeoutRefund(t *testing.T) {
 			t.Fatalf("stranger's claimSwapTimeout after the deadline refused: %s", why)
 		}
 		e.observe(t, "STEP 5  stranger calls claimSwapTimeout after the deadline -> accepted", e.stranger.From, tx, r)
+		w5TimeoutGas = r.GasUsed
 		sawRevertCommit := false
 		for _, lg := range r.Logs {
 			if len(lg.Topics) > 2 && lg.Topics[0] == tc.commitmentSig && lg.Topics[2].Big().Cmp(res.RevertCommitA) == 0 {

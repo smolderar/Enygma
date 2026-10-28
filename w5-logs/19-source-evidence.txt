@@ -31,7 +31,7 @@
         return true;
     }
 
-## SwapRelayer.cancelSwap (the relayer route unlocks instead)
+## SwapRelayer.cancelSwap (the relayer route frees the original note instead)
     function cancelSwap(bytes32 swapId) external nonReentrant {
         PendingSwap storage s = swaps[swapId];
 
